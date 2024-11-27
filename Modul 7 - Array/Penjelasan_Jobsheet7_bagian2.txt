@@ -1,0 +1,49 @@
+1. Judul Program
+   ➥ Menyimpan dan Menampilkan Nama Mahasiswa dengan Alokasi Memori Dinamis
+
+2. Fungsi Program
+   ➥ 1. Memasukkan jumlah mahasiswa.
+   ➥ 2. Memasukkan nama setiap mahasiswa (termasuk yang mengandung spasi).
+   ➥ 3. Menampilkan nama mahasiswa yang telah diinput.
+   ➥ 4. Membersihkan memori yang digunakan (menghindari kebocoran memori).
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf dan scanf.
+   ➥ stdlib.h: Digunakan untuk fungsi alokasi memori dinamis seperti malloc dan free.
+
+4. Deklarasi Variabel
+   ➥ jumlahMahasiswa: Variabel untuk menyimpan jumlah mahasiswa yang diinput oleh pengguna.
+   ➥ namaMahasiswa: Pointer ke array dari pointer-pointers yang akan menyimpan nama-nama mahasiswa.
+
+PROSES PROGRAM
+1. Input Jumlah Mahasiswa
+   ➥ Program meminta pengguna untuk memasukkan jumlah mahasiswa yang akan diinput.
+   ➥ Nilai ini disimpan dalam variabel jumlahMahasiswa.
+
+2. Alokasi Memori untuk Nama Mahasiswa
+   ➥ malloc digunakan untuk mengalokasikan memori sebesar jumlah mahasiswa (jumlahMahasiswa) untuk menyimpan pointer ke nama mahasiswa.
+   ➥ Setiap nama mahasiswa akan diakses menggunakan pointer ini.
+
+3. Input Nama Mahasiswa
+   ➥ malloc(100 * sizeof(char)): Untuk setiap mahasiswa, dialokasikan memori sebesar 100 karakter.
+   ➥ scanf(" %[^\n]", namaMahasiswa[i]): Membaca string termasuk spasi hingga pengguna menekan Enter.
+
+4. Menampilkan Nama Mahasiswa
+   ➥ for loop: Iterasi untuk mencetak nama semua mahasiswa yang telah diinput.
+   ➥ Nama ditampilkan sesuai indeks input.
+
+5. Membersihkan Memori
+   ➥ free(namaMahasiswa[i]): Membersihkan memori yang dialokasikan untuk setiap nama mahasiswa.
+   ➥ free(namaMahasiswa): Membersihkan memori untuk array pointer namaMahasiswa.
+Langkah ini penting untuk mencegah memory leak.
+
+6. Logika Utama
+   ➥ Input Jumlah Mahasiswa: Menggunakan scanf untuk menentukan jumlah mahasiswa.
+   ➥ Alokasi Memori Dinamis: Menggunakan malloc untuk mengalokasikan memori berdasarkan jumlah mahasiswa.
+   ➥ Input Nama Mahasiswa: Menggunakan loop untuk menyimpan nama mahasiswa ke dalam array pointer.
+   ➥ Membersihkan Memori: Menggunakan free untuk membebaskan memori yang dialokasikan.
+
+7. Keunggulan Program
+   ➥ Fleksibel untuk jumlah mahasiswa yang tidak tetap.
+   ➥ Memproses nama yang mengandung spasi (misalnya: "Ali Prasetyo").
+   ➥ Memastikan memori bebas setelah digunakan.

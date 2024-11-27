@@ -1,0 +1,37 @@
+1. Judul Program 
+   ➥ Program Validasi Login dengan Username dan Password
+
+2. Fungsi Program
+   ➥ Program ini memverifikasi username dan password yang diinput oleh pengguna. Jika keduanya cocok dengan yang telah ditentukan, pengguna berhasil login. Jika tidak, pesan kesalahan akan ditampilkan.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf dan scanf.
+   ➥ string.h: Digunakan untuk fungsi strcmp yang membandingkan dua string.
+
+4. Deklarasi Variabel
+   ➥ inputUsername: Array untuk menyimpan username yang dimasukkan oleh pengguna.
+   ➥ inputPassword: Array untuk menyimpan password yang dimasukkan oleh pengguna.
+   ➥ correctUsername: Konstanta yang menyimpan username yang benar, yaitu "Fatima".
+   ➥ correctPassword: Konstanta yang menyimpan password yang benar, yaitu "Fatimacantik".
+
+PROSES PROGRAM
+1. Input Username
+   ➥ Program meminta pengguna untuk memasukkan username.
+   ➥ %s: Format untuk membaca string tanpa spasi.
+
+2. Input Password
+   ➥ Program meminta pengguna untuk memasukkan password.
+   ➥ %s: Format untuk membaca string tanpa spasi.
+
+3. Validasi Username dan Password
+   ➥ strcmp: Membandingkan dua string:
+       ↪ strcmp(inputUsername, correctUsername) == 0: Memastikan username yang diinput sama dengan username yang benar.
+       ↪ strcmp(inputPassword, correctPassword) == 0: Memastikan password yang diinput sama dengan password yang benar.
+   ➥ Jika kedua kondisi benar, program mencetak "Berhasil login".
+   ➥ Jika salah satu atau keduanya tidak cocok, program mencetak "Password salah".
+
+4. Logika Utama
+      ➥ Input Username dan Password: Program membaca input pengguna.
+    ➥ Validasi Input:
+        ↪ Menggunakan fungsi strcmp untuk membandingkan username dan password.
+        ↪ Jika cocok, login berhasil. Jika tidak, login gagal.

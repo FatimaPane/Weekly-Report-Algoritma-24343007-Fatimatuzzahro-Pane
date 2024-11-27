@@ -1,0 +1,68 @@
+1. Judul Program
+   ➥ Menghitung Rata-rata Nilai dari 20 Mahasiswa
+
+2. Fungsi Program
+   ➥ 1. Memasukkan nilai dari 20 mahasiswa.
+   ➥ 2. Menghitung total nilai.
+   ➥ 3. Menghitung rata-rata nilai dari semua mahasiswa.
+   ➥ 4. Menampilkan hasil rata-rata.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf (menampilkan data) dan scanf (membaca input).
+
+4. Deklarasi Variabel
+   ➥ nilai[20]: Array untuk menyimpan nilai dari 20 mahasiswa.
+   ➥ jumlahMahasiswa: Variabel untuk menyimpan jumlah total mahasiswa (dalam contoh ini, 20).
+   ➥ totalNilai: Variabel untuk menyimpan total nilai semua mahasiswa.
+   ➥ rataRata: Variabel bertipe float untuk menyimpan hasil rata-rata nilai.
+
+PROSES PROGRAM
+1. Meminta Input Nilai Mahasiswa
+   ➥ for loop: Digunakan untuk mengulang proses input nilai sebanyak 20 kali (sesuai dengan jumlah mahasiswa).
+   ➥ scanf: Membaca nilai yang dimasukkan oleh pengguna untuk setiap mahasiswa.
+   ➥ totalNilai += nilai[i];: Menambahkan nilai yang dimasukkan ke dalam variabel totalNilai.
+
+2. Menghitung Rata-rata
+   ➥ totalNilai: Total nilai dari semua mahasiswa.
+   ➥ jumlahMahasiswa: Jumlah total mahasiswa.
+   ➥ Hasil rata-rata dihitung dengan membagi totalNilai dengan jumlahMahasiswa.
+(float): Konversi eksplisit agar pembagian menghasilkan angka desimal.
+
+3. Menampilkan Hasil
+   ➥ Menampilkan rata-rata nilai dengan format dua angka di belakang koma (%.2f).
+
+4. Contoh Eksekusi Program
+   ➥ Input:
+        Masukkan nilai dari 20 Mahasiswa:
+	Nilai mahasiswa ke-1: 80
+	Nilai mahasiswa ke-2: 85
+	Nilai mahasiswa ke-3: 90
+	Nilai mahasiswa ke-4: 75
+	Nilai mahasiswa ke-5: 88
+	Nilai mahasiswa ke-6: 92
+	Nilai mahasiswa ke-7: 77
+	Nilai mahasiswa ke-8: 81
+	Nilai mahasiswa ke-9: 95
+	Nilai mahasiswa ke-10: 84
+	Nilai mahasiswa ke-11: 73
+	Nilai mahasiswa ke-12: 79
+	Nilai mahasiswa ke-13: 91
+	Nilai mahasiswa ke-14: 87
+	Nilai mahasiswa ke-15: 82
+	Nilai mahasiswa ke-16: 76
+	Nilai mahasiswa ke-17: 80
+	Nilai mahasiswa ke-18: 89
+	Nilai mahasiswa ke-19: 93
+	Nilai mahasiswa ke-20: 78
+
+  ➥ Proses:
+      ↪ Total Nilai: 80+85+90+75+88+92+77+81+95+84+73+79+91+87+82+76+80+89+93+78=1595
+      ↪ Rata-rata = Total Nilai/Jumlah Mahasiswa = 1595 / 20 = 79.75
+
+5.Logika Utama:
+  ➥ Input Data: Menggunakan array untuk menyimpan nilai.
+  ➥ Total Nilai: Menjumlahkan semua nilai dalam loop.
+  ➥ Rata-rata Nilai: Menggunakan total nilai dibagi jumlah mahasiswa.
+
+6. Hasil Akhir:
+  ➥ Program menghasilkan rata-rata nilai dari seluruh mahasiswa dengan format desimal hingga dua angka di belakang koma.
