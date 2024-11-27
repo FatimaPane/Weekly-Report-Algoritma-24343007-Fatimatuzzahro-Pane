@@ -1,7 +1,6 @@
-> ```
-> Nama : Fatimatuzzahro Pane
-> NIM  : 24343007
-> ```
+<h1>Nama: Fatimatuzzahro Pane</h1>
+<h1>NIM: 24343007</h1>
+
 
 ---
 
