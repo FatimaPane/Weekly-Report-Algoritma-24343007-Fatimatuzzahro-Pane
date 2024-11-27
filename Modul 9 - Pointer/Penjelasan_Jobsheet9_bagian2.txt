@@ -1,0 +1,41 @@
+1. Judul Program
+   ➥ Program Membalikkan String
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk membalikkan sebuah string yang dimasukkan oleh pengguna dan menampilkan hasilnya. Program juga memastikan bahwa karakter newline (enter) yang muncul setelah input tidak ikut dibalikkan.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf dan fgets.
+   ➥ string.h: Pustaka untuk fungsi strlen (menghitung panjang string) dan strcspn (untuk mencari posisi karakter newline).
+
+4. Deklarasi Konstanta dan Fungsi
+   ➥ 1. Konstanta MAX_LENGTH
+	 ↪ MAX_LENGTH: Menentukan panjang maksimum string yang dapat dimasukkan, yaitu 1000 karakter.
+   ➥ 2. Fungsi reverseString
+         ↪ reverseString: Fungsi ini membalikkan string yang diterima sebagai parameter.
+         ↪ Menghitung panjang string dengan strlen(str).
+         ↪ Menggunakan loop untuk menukar karakter pertama dengan karakter terakhir, karakter kedua dengan karakter kedua dari belakang, dan seterusnya, hingga mencapai tengah string.
+         ↪ temp digunakan sebagai variabel sementara untuk menyimpan nilai karakter yang sedang ditukar.
+
+5. Fungsi main
+   ➥ Input: Program meminta pengguna untuk memasukkan sebuah kalimat atau string.
+        ↪ fgets(input, MAX_LENGTH, stdin) digunakan untuk membaca string dengan aman, termasuk spasi, hingga mencapai panjang maksimal yang ditentukan oleh MAX_LENGTH.
+   ➥ Menghilangkan Karakter Newline: Setelah membaca input, strcspn(input, "\n") mencari posisi karakter newline (\n) yang muncul setelah pengguna menekan Enter dan menggantinya dengan null terminator (\0).
+   ➥ Membalikkan String: Program memanggil fungsi reverseString untuk membalikkan string yang dimasukkan.
+   ➥ Output: Program menampilkan string yang sudah dibalik.
+
+6. Penjelasan Eksekusi Program
+   ➥ Input Pengguna: Program meminta pengguna untuk memasukkan sebuah kalimat atau string.
+   ➥ Menghilangkan Karakter Newline: Program menghapus karakter newline (\n) yang dihasilkan setelah menekan Enter dengan menggunakan fungsi strcspn.
+   ➥ Pembalikan String: Program memanggil fungsi reverseString untuk membalikkan string.
+        ↪ Looping dilakukan untuk menukar karakter dari depan dan belakang hingga mencapai tengah string.
+   ➥ Output: Setelah string dibalik, program menampilkan string yang telah dibalik dengan format yang rapi.
+
+7. Logika Utama:
+   ➥ Menggunakan fgets untuk membaca input string termasuk spasi.
+   ➥ Menghilangkan karakter newline yang ditambahkan oleh fgets.
+   ➥ Menggunakan fungsi rekursif atau loop untuk membalikkan string.
+
+8. Keunggulan Program:
+   ➥ Program ini menangani input dengan spasi dan membalikkan string secara efisien.
+   ➥ Menggunakan fgets untuk pembacaan input yang lebih aman dibandingkan dengan scanf.

@@ -1,0 +1,40 @@
+1. Judul Program
+   ➥ Menampilkan String Terbalik Karakter per Karakter
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk menampilkan string dalam urutan terbalik, dengan menampilkan satu karakter per baris dari string yang sudah dibalik.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf untuk menampilkan data ke layar.
+   ➥ string.h: Pustaka standar C yang menyediakan berbagai fungsi untuk manipulasi string, dalam hal ini digunakan untuk fungsi strlen yang menghitung panjang string.
+
+4. Deklarasi Variabel
+   ➥ str[]: String yang akan dibalik dan ditampilkan, dalam hal ini adalah string "BORLAND".
+   ➥ len: Menyimpan panjang string yang dihitung menggunakan strlen. Fungsi strlen mengembalikan jumlah karakter dalam string, tanpa menghitung karakter null ('\0') di akhir string.
+
+5. Proses Program
+   ➥ 1. Menghitung Panjang String
+         ↪ strlen(str) menghitung panjang dari string str, yang dalam kasus ini adalah panjang dari "BORLAND", yaitu 7 karakter.
+
+   ➥ 2. Loop untuk Menampilkan Karakter dari String dalam Urutan Terbalik
+         ↪ Loop: Dimulai dari i = len - 1 (indeks terakhir dari string) hingga i = 0.
+         ↪ &str[i]: Mengambil alamat dari karakter ke-i dalam string dan menampilkannya. Namun, karena format %s digunakan dalam printf, yang merupakan format untuk string, &str[i] akan mencetak seluruh bagian string mulai dari karakter yang ke-i hingga akhir string.
+
+Sebagai contoh:
+               ↪ Untuk i = 6: &str[6] menunjuk ke karakter 'D' dan menampilkan string mulai dari 'D' hingga karakter terakhir.
+               ↪ Untuk i = 5: &str[5] menunjuk ke karakter 'N' dan menampilkan string mulai dari 'N' hingga karakter terakhir, yaitu 'D'.
+               ↪ Dan seterusnya, sehingga membalikkan string dan menampilkan karakter satu per satu di setiap baris.
+   ➥ 3. Menampilkan Hasil
+         ↪ Setiap karakter akan ditampilkan pada baris yang berbeda dalam urutan terbalik.
+
+6. Penjelasan Eksekusi Program
+   ➥ Loop dimulai dari indeks terakhir string (indeks 6, yaitu 'D'), dan setiap kali loop berjalan, indeks i berkurang, sehingga menghasilkan string yang semakin pendek yang dimulai dari karakter i hingga akhir string.
+   ➥ Pada iterasi pertama (indeks 6), hanya karakter 'D' yang ditampilkan. Pada iterasi berikutnya, karakter 'N' ditambahkan di depan 'D', dan seterusnya hingga seluruh string ditampilkan dalam urutan terbalik.
+
+7. Logika Utama:
+   ➥ Menghitung panjang string dengan strlen.
+   ➥ Menggunakan loop untuk menampilkan karakter-karakter string secara berurutan dalam urutan terbalik.
+
+8. Keunggulan Program:
+   ➥ Program ini menampilkan string dengan cara yang unik, memperlihatkan perubahan secara bertahap dari string lengkap ke karakter terbalik.
+   ➥ Menggunakan pointer untuk mencetak bagian dari string dari posisi tertentu ke akhir.

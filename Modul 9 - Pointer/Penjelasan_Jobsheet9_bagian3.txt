@@ -1,0 +1,37 @@
+1. Judul Program
+   ➥ Manipulasi Variabel dan Penggunaan Pointer
+
+2. Fungsi Program
+   ➥ Program ini melibatkan dua bagian:
+	↪ Bagian A: Menginisialisasi variabel dan mengoperasikan nilai antar variabel.
+	↪ Bagian B: Menggunakan pointer untuk mengakses dan memodifikasi nilai variabel.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf untuk menampilkan data ke layar.
+
+4. Bagian A: Pengoperasian Variabel
+   ➥ 1. Deklarasi Variabel
+         ↪ Lesley = 57082: Variabel Lesley diberi nilai 57082.
+	 ↪ Layla = Lesley: Variabel Layla mendapatkan nilai yang sama dengan Lesley, yaitu 57082.
+	 ↪ Balmond = Layla + 1: Variabel Balmond diberikan nilai Layla + 1, yaitu 57083.
+   ➥ 2. Output Bagian A
+         ↪ Program menampilkan nilai dari Layla dan Balmond.
+
+5. Bagian B: Penggunaan Pointer
+   ➥ 1. Deklarasi Pointer dan Penggunaan
+	 ↪ int* ptrLayla = &Lesley;: Pointer ptrLayla diinisialisasi dengan alamat dari variabel Lesley menggunakan operator &.
+	 ↪ Balmond = *ptrLayla + 1;: Pointer ptrLayla digunakan untuk mengakses nilai Lesley melalui dereferensi (*ptrLayla), yang memberikan nilai 57082, kemudian ditambahkan dengan 1 untuk menghasilkan 57083, yang kemudian disalin ke Balmond.
+   ➥ 2. Output Bagian B:
+         ↪ Program menampilkan alamat memori dari Lesley yang disimpan di ptrLayla dan nilai Balmond yang dihitung berdasarkan nilai yang ditunjuk oleh pointer.
+   ➥ 3. Catatan:
+	 ↪ %p digunakan untuk menampilkan alamat memori (pointer) dalam format heksadesimal.
+	 ↪ (void*)ptrLayla digunakan untuk menghindari peringatan kompilasi saat 
+	 ↪ (a) menampilkan alamat memori di mana Lesley disimpan. Alamat ini akan bervariasi setiap kali program dijalankan.
+	 ↪ (b) menampilkan nilai Balmond, yang dihitung berdasarkan nilai yang ditemukan pada alamat memori Lesley.
+
+6. Logika Utama:
+   ➥ Bagian A memperlihatkan cara mengoperasikan nilai antar variabel.
+   ➥ Bagian B menunjukkan cara menggunakan pointer untuk mengakses dan mengubah nilai yang ada di alamat memori variabel lain.
+
+7. Keunggulan Program:
+   ➥ Program ini memperkenalkan penggunaan pointer untuk manipulasi data dalam C, serta cara bekerja dengan alamat memori dan dereferensi pointer.
