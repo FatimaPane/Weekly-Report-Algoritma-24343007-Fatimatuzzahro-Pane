@@ -1,0 +1,37 @@
+1. Judul Program
+   ➥ Program Kalkulator Sederhana dengan Operasi Aritmetika Dasar
+
+2. Fungsi Program
+   ➥ Memasukkan dua bilangan.
+   ➥ Memilih operasi aritmetika (penjumlahan, pengurangan, perkalian, pembagian).
+   ➥ Menampilkan hasil dari operasi yang dipilih.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar yang digunakan untuk fungsi input-output seperti printf (untuk menampilkan data) dan scanf (untuk menerima input).
+
+5. DEKLARASI FUNGSI
+   ➥ 1. Fungsi Penjumlahan
+         ↪ Fungsi ini menerima dua parameter a dan b, dan mengembalikan hasil penjumlahan dari kedua angka tersebut.
+   ➥ 2. Fungsi Pengurangan
+         ↪ Fungsi ini menerima dua parameter a dan b, dan mengembalikan hasil pengurangan a - b.
+   ➥ 3. Fungsi Perkalian
+         ↪ Fungsi ini menerima dua parameter a dan b, dan mengembalikan hasil perkalian a * b.
+   ➥ 4. Fungsi Pembagian
+         ↪ Fungsi ini menerima dua parameter a dan b.
+         ↪ Jika b != 0, fungsi akan mengembalikan hasil pembagian a / b.
+         ↪ Jika b == 0, fungsi akan menampilkan pesan kesalahan karena pembagian dengan nol tidak diizinkan dan mengembalikan nilai 0.
+
+6. FUNGSI MAIN
+   ➥ Input Bilangan: Program meminta pengguna untuk memasukkan dua bilangan (tipe float) yang akan digunakan dalam operasi.
+   ➥ Menu Pilihan Operasi: Program menampilkan menu pilihan operasi aritmetika (penjumlahan, pengurangan, perkalian, pembagian).
+   ➥ Pemilihan Operasi: Pengguna memilih operasi dengan memasukkan angka dari 1 hingga 4, dan program akan memanggil fungsi yang sesuai.
+   ➥ Output: Program menampilkan hasil dari operasi yang dipilih, dengan format dua angka desimal.
+
+7. Logika Utama:
+   ➥ Program menerima dua input angka dari pengguna.
+   ➥ Program menampilkan menu untuk memilih operasi aritmetika yang diinginkan.
+   ➥ Berdasarkan pilihan, program memanggil fungsi yang sesuai dan menampilkan hasilnya.
+
+8. Keunggulan Program:
+   ➥ Program dapat menangani beberapa jenis operasi aritmetika dasar.
+   ➥ Memiliki penanganan kesalahan untuk pembagian dengan nol.

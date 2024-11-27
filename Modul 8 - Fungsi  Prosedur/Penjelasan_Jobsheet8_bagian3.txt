@@ -1,0 +1,44 @@
+1. Judul Program
+   ➥ Menghitung Luas dan Keliling Lingkaran
+
+2. Fungsi Program
+   ➥ Luas lingkaran berdasarkan jari-jari yang dimasukkan pengguna.
+   ➥ Keliling lingkaran berdasarkan jari-jari yang dimasukkan pengguna.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf dan scanf.
+
+4. Deklarasi Konstanta dan Fungsi
+   ➥ 1. Konstanta PI
+        ↪ #define PI 3.14: Mendefinisikan konstanta PI dengan nilai 3.14, yang digunakan dalam perhitungan luas dan keliling lingkaran.
+   ➥ 2. Fungsi Luas Lingkaran
+        ↪ Fungsi ini menghitung luas lingkaran dengan rumus: Luas=π×radius 
+        ↪ Input: Jari-jari lingkaran (radius).
+   	↪ Output: Luas lingkaran yang dihitung.
+   ➥ 3. Fungsi Keliling Lingkaran
+	↪ Fungsi ini menghitung keliling lingkaran dengan rumus: Keliling = 2 × π × radius
+        ↪ Input: Jari-jari lingkaran (radius).
+        ↪ Output: Keliling lingkaran yang dihitung.
+
+5. Fungsi main
+   ➥ Input: Program meminta pengguna untuk memasukkan jari-jari lingkaran (radius).
+   ➥ Proses:
+       ↪ Memanggil fungsi luas untuk menghitung luas lingkaran.
+       ↪ Memanggil fungsi keliling untuk menghitung keliling lingkaran.
+   ➥ Output: Program menampilkan hasil perhitungan luas dan keliling lingkaran 
+
+6. Penjelasan Eksekusi Program
+   ➥ Input: Pengguna diminta untuk memasukkan jari-jari lingkaran.
+   ➥ Perhitungan: Program menghitung luas dan keliling lingkaran menggunakan fungsi yang telah didefinisikan:
+      ↪ Luas: Menggunakan rumus PI * radius * radius.
+      ↪ Keliling: Menggunakan rumus 2 * PI * radius.
+   ➥ Output: Program menampilkan hasil luas dan keliling lingkaran dengan format dua angka desimal.
+
+7. Logika Utama:
+   ➥ Program menerima input jari-jari lingkaran dari pengguna.
+   ➥ Fungsi luas dan keliling digunakan untuk menghitung masing-masing hasil.
+   ➥ Program menampilkan hasil perhitungan dengan format desimal dua angka.
+
+8. Keunggulan Program:
+   ➥ Program ini menggunakan pendekatan modular dengan fungsi terpisah untuk menghitung luas dan keliling.
+   ➥ Program memberikan hasil dengan format dua angka desimal.

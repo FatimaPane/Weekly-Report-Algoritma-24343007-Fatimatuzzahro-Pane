@@ -1,0 +1,39 @@
+1. Judul Program
+   ➥ Program Penghitungan Potongan Diskon dan Total Pembayaran
+
+2. Fungsi Program
+   ➥ Program ini menghitung potongan diskon dan total yang harus dibayar berdasarkan total pembelian pengguna. Potongan diskon dihitung dengan aturan:
+       ↪ Diskon 35% untuk total pembelian lebih besar dari atau sama dengan Rp 3.000.000.
+       ↪ Diskon 20% untuk total pembelian lebih besar dari atau sama dengan Rp 1.000.000, tetapi kurang dari Rp 3.000.000.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf dan scanf.
+
+4. Deklarasi Fungsi untuk Menghitung Potongan Diskon
+   ➥ Fungsi potong digunakan untuk menghitung potongan diskon berdasarkan total pembelian.
+      ↪ Jika total pembelian lebih dari atau sama dengan Rp 3.000.000, diskon yang diberikan adalah 35%.
+      ↪ Jika total pembelian lebih dari atau sama dengan Rp 1.000.000, tetapi kurang dari Rp 3.000.000, diskon yang diberikan adalah 20%.
+   ➥ Fungsi mengembalikan nilai diskon yang dihitung.
+
+5. Fungsi main
+   ➥ Input: Program meminta pengguna untuk memasukkan total pembelian.
+   ➥ Proses:
+       ↪ Program memanggil fungsi potong untuk menghitung diskon berdasarkan total pembelian.
+       ↪ Program kemudian menghitung total yang harus dibayarkan dengan mengurangi diskon dari total pembelian.
+   ➥ Output: Program menampilkan nilai diskon dan total yang harus dibayarkan dengan format dua angka desimal.
+
+6. Penjelasan Proses Program
+   ➥ Input Pengguna: Program meminta total pembelian dari pengguna untuk dihitung diskonnya.
+   ➥ Fungsi potong: Berdasarkan nilai total pembelian, program memanggil fungsi potong untuk menghitung besar diskon yang sesuai.
+   ➥ Penghitungan Total Pembayaran: Setelah diskon dihitung, program mengurangi diskon dari total pembelian untuk mendapatkan total yang harus dibayarkan.
+   ➥ Output: Program menampilkan besar diskon dan total yang harus dibayar dengan format dua angka desimal.
+
+7. Logika Utama:
+   ➥ Input Total Pembelian: Program meminta total pembelian dari pengguna.
+   ➥ Menghitung Diskon: Menggunakan fungsi potong untuk menghitung diskon berdasarkan pembelian.
+   ➥ Menghitung Total yang Harus Dibayar: Mengurangi diskon dari total pembelian.
+   ➥ Menampilkan Hasil: Program menampilkan diskon dan total yang harus dibayar dengan format dua angka desimal.
+
+8. Keunggulan Program:
+   ➥ Program ini fleksibel dalam memberikan diskon berdasarkan jumlah pembelian.
+   ➥ Menampilkan hasil dengan format yang jelas dan rapi.

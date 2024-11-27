@@ -1,0 +1,41 @@
+1. Judul Program
+   ➥ Menghitung Perkalian dengan Rekursi
+
+2. Fungsi Program
+   ➥ Program ini menghitung hasil perkalian dua angka menggunakan rekursi. Rekursi dilakukan dengan penjumlahan berulang, yang mana bilangan pertama akan ditambahkan sebanyak bilangan kedua (tanpa menggunakan operator perkalian *).
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf (untuk menampilkan data) dan scanf (untuk menerima input).
+
+4. Deklarasi Fungsi Rekursif
+   ➥ PerkalianRekursif: Fungsi rekursif untuk menghitung hasil perkalian dua angka (a dan b).
+   ➥ Basis Rekursif: Jika b == 0, maka hasil perkalian adalah 0, karena setiap bilangan yang dikalikan dengan 0 hasilnya adalah 0.
+   ➥ Rekurens: Jika b tidak sama dengan 0, maka fungsi akan memanggil dirinya sendiri dengan b-1, dan setiap pemanggilan fungsi menambahkan a (bilangan pertama) ke hasil dari panggilan rekursif selanjutnya.
+
+5. FUNGSI MAIN
+   ➥ Program utama:
+       ↪ Input: Meminta pengguna untuk memasukkan dua angka yang akan dikalikan.
+       ↪ Panggilan Fungsi Rekursif: Memanggil fungsi perkalianRekursif untuk menghitung hasil perkalian.
+       ↪ Output: Menampilkan hasil perkalian yang dihitung menggunakan rekursi.
+
+6. Contoh Eksekusi Program
+   ➥ Proses Rekursi:
+	↪ perkalianRekursif(4, 3) → 4 + perkalianRekursif(4, 2)
+	↪ perkalianRekursif(4, 2) → 4 + perkalianRekursif(4, 1)
+	↪ perkalianRekursif(4, 1) → 4 + perkalianRekursif(4, 0)
+	↪ perkalianRekursif(4, 0) → Basis rekursif, hasilnya 0.
+	↪ Hasil Rekursif = 4+(4+(4+0)) = 12
+   ➥ Output: Hasil dari 4 x 3 adalah: 12
+
+7. Penjelasan Proses Rekursi
+   ➥ Fungsi rekursif bekerja dengan memanggil dirinya sendiri untuk menghitung hasil perkalian a * b.
+   ➥ Basis Rekursif terjadi ketika b == 0, yang mengembalikan nilai 0.
+   ➥ Pada setiap iterasi, a ditambahkan ke hasil dari pemanggilan rekursif sebelumnya, yang pada akhirnya menghasilkan hasil perkalian.
+
+8. Kesimpulan
+   ➥ Program ini menggunakan rekursi untuk menghitung hasil perkalian dua angka.
+   ➥ Fungsi perkalianRekursif mengurangi angka kedua (b) satu per satu sampai mencapai 0 dan melakukan penjumlahan berulang dengan angka pertama (a).
+
+9. Keunggulan Program:
+   ➥ Menggunakan rekursi untuk menyelesaikan masalah perkalian.
+   ➥ Simpel dan efisien dalam menghitung perkalian menggunakan penjumlahan berulang.
