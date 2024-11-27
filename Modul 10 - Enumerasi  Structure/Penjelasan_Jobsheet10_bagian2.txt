@@ -1,0 +1,40 @@
+1. Judul Program
+   ➥ Menentukan Zodiak Berdasarkan Tanggal Lahir
+
+2. Fungsi Program
+   ➥ Program ini memungkinkan pengguna untuk memasukkan tanggal lahir dalam format [tgl-bln-tahun] dan kemudian menghitung zodiak yang sesuai berdasarkan tanggal dan bulan yang dimasukkan.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf dan scanf.
+   ➥ stdlib.h: Digunakan untuk fungsi exit() jika diperlukan (meskipun tidak digunakan di sini).
+
+4. Struktur Zodiak
+   ➥ Zodiak adalah struktur yang menyimpan informasi tentang rentang tanggal dan bulan untuk setiap zodiak, serta nama zodiak itu sendiri:
+        ↪ startDay dan startMonth: Menyimpan tanggal dan bulan mulai zodiak.
+        ↪ endDay dan endMonth: Menyimpan tanggal dan bulan berakhirnya zodiak.
+        ↪ name: Menyimpan nama zodiak (misalnya "ARIES", "TAURUS", dll).
+
+5. Fungsi getZodiacIndex
+   ➥ getZodiacIndex adalah fungsi untuk mencari indeks zodiak berdasarkan tanggal dan bulan yang dimasukkan.
+        ↪ Fungsi ini memiliki array zodiacs[] yang menyimpan informasi tentang setiap zodiak, seperti tanggal mulai dan berakhir serta nama zodiak.
+        ↪ Fungsi memeriksa apakah tanggal dan bulan yang dimasukkan sesuai dengan rentang tanggal zodiak tertentu.
+        ↪ Jika ditemukan kecocokan, fungsi mengembalikan indeks zodiak tersebut, jika tidak ditemukan, mengembalikan -1.
+
+6. Fungsi main
+   ➥ Input: Program meminta input tanggal lahir pemain dalam format tgl-bln-tahun.
+   ➥ Mendapatkan Zodiak: Program kemudian memanggil fungsi getZodiacIndex untuk mencari zodiak yang sesuai dengan tanggal dan bulan yang dimasukkan.
+   ➥ Menampilkan Hasil: Jika indeks zodiak ditemukan, nama zodiak ditampilkan. Jika tidak ditemukan, program menampilkan pesan bahwa zodiak tidak ditemukan.
+
+7. Penjelasan Program
+   ➥ Input Pengguna: Program meminta tanggal lahir pengguna dalam format tgl-bln-tahun.
+   ➥ Menentukan Zodiak: Program memeriksa apakah tanggal dan bulan yang dimasukkan sesuai dengan rentang tanggal yang ada dalam daftar zodiak.
+   ➥ Output: Program menampilkan nama zodiak yang sesuai atau pesan jika tidak ditemukan.
+
+8. Logika Utama:
+   ➥ Input tanggal lahir dari pengguna.
+   ➥ Mencocokkan tanggal dan bulan dengan rentang tanggal yang ada di daftar zodiak.
+   ➥ Menampilkan nama zodiak jika cocok, atau pesan jika tidak ditemukan.
+
+9. Keunggulan Program:
+   ➥ Program ini dapat dengan mudah digunakan untuk mencari zodiak berdasarkan tanggal lahir dengan akurat.
+   ➥ Menggunakan struktur data (struct) untuk mengorganisir informasi tentang zodiak, yang membuat program lebih terstruktur.

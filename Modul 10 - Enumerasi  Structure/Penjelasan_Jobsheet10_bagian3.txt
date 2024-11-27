@@ -1,0 +1,51 @@
+1. Judul Program
+   ➥ Program Input dan Tampil Data Mahasiswa
+
+2. Fungsi Program
+   ➥ Program ini memungkinkan pengguna untuk memasukkan data mahasiswa seperti NPM, Nama, Tanggal Lahir, Alamat, dan Nomor HP. Data mahasiswa yang dimasukkan kemudian dapat ditampilkan dalam bentuk daftar setelah pengguna selesai memasukkan data.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf dan scanf.
+   ➥ stdlib.h: Digunakan untuk fungsi exit() jika dibutuhkan (meskipun tidak digunakan di sini).
+   ➥ string.h: Digunakan untuk manipulasi string, meskipun tidak digunakan secara langsung dalam kode ini.
+
+4. Struktur Data Mahasiswa
+   ➥ Mahasiswa adalah struktur yang menyimpan data mahasiswa, dengan elemen-elemen:
+        ↪ npm[10]: Menyimpan NPM (Nomor Pokok Mahasiswa).
+        ↪ nama[50]: Menyimpan nama mahasiswa.
+	↪ tgl_lahir[12]: Menyimpan tanggal lahir mahasiswa dalam format mm-dd-yyyy.
+	↪ alamat[50]: Menyimpan alamat mahasiswa.
+	↪ hp[15]: Menyimpan nomor handphone mahasiswa.
+
+5. Fungsi inputDataMahasiswa
+   ➥ Fungsi ini meminta input dari pengguna untuk mengisi data mahasiswa, seperti NPM, Nama, Tanggal Lahir, Alamat, dan HP.
+        ↪ scanf(" %[^\n]%*c", m->nama) digunakan untuk membaca nama dengan spasi. Karakter %[^\n] membaca hingga menemukan karakter newline (\n).
+ 	↪ Fungsi ini menerima pointer ke struktur Mahasiswa, yang memungkinkan fungsi untuk memodifikasi data mahasiswa langsung di memori.
+
+6. Fungsi tampilDataMahasiswa
+   ➥ Fungsi ini menampilkan semua data mahasiswa yang telah dimasukkan.
+	↪ for (int i = 0; i < count; i++) digunakan untuk menampilkan data setiap mahasiswa dalam array mahasiswa[].
+	↪ m[i].npm, m[i].nama, dll. digunakan untuk mengakses elemen-elemen dalam array mahasiswa yang disimpan dalam struktur Mahasiswa.
+
+7. Penjelasan Fungsi main:
+   ➥ 1. Deklarasi Variabel:
+	↪ mahasiswa[100]: Array untuk menyimpan data mahasiswa, dengan kapasitas maksimal 100 mahasiswa.
+	↪ count: Menyimpan jumlah mahasiswa yang telah dimasukkan.
+	↪ pilihan: Menyimpan pilihan dari pengguna apakah ingin memasukkan data lagi.
+
+   ➥ 2. Loop untuk Input Data:
+	↪ Program meminta pengguna untuk memasukkan data mahasiswa satu per satu, dengan memanggil inputDataMahasiswa untuk setiap mahasiswa.
+	↪ count++ digunakan untuk menambahkan jumlah mahasiswa yang telah dimasukkan.
+	↪ scanf(" %c", &pilihan) digunakan untuk membaca pilihan apakah pengguna ingin memasukkan data lagi.
+
+   ➥ 3. Menampilkan Data:
+	↪ Setelah selesai, program memanggil tampilDataMahasiswa untuk menampilkan seluruh data mahasiswa yang telah dimasukkan.
+
+8. Logika Utama:
+   ➥ Input: Program meminta pengguna memasukkan data mahasiswa satu per satu.
+   ➥ Loop: Program mengizinkan pengguna untuk memasukkan lebih dari satu data mahasiswa hingga pengguna memilih untuk berhenti.
+   ➥ Output: Program menampilkan seluruh data mahasiswa yang telah dimasukkan.
+
+9. Keunggulan Program:
+   ➥ Fleksibel: Dapat menyimpan data mahasiswa dalam jumlah besar (hingga 100 mahasiswa).
+   ➥ Mudah Digunakan: Pengguna dapat dengan mudah memasukkan data dan melihat hasilnya.

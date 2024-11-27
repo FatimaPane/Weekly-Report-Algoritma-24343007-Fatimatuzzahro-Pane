@@ -1,0 +1,55 @@
+1. Judul Program
+   ➥ Permainan Tebak Angka antara 1 hingga 20
+
+2. Fungsi Program
+   ➥ Program ini memungkinkan pemain untuk menebak angka yang dipilih komputer secara acak dalam rentang 1 hingga 20. Pemain akan diberitahu apakah tebakan mereka terlalu rendah atau terlalu tinggi hingga mereka menebak angka yang benar. Setelah permainan selesai, pemain diberi pilihan untuk bermain lagi atau keluar dari permainan.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf dan scanf.
+   ➥ stdlib.h: Digunakan untuk fungsi rand() dan srand() yang digunakan untuk menghasilkan angka acak.
+   ➥ time.h: Digunakan untuk mendapatkan waktu sistem yang digunakan sebagai seed untuk menghasilkan angka acak yang berbeda setiap kali program dijalankan.
+
+4. Deskripsi Fungsi playGame:
+   ➥ 1. Inisialisasi Variabel:
+	 ↪ number: Menyimpan angka acak yang dipilih komputer.
+	 ↪ guess: Menyimpan tebakan yang dimasukkan pemain.
+	 ↪ attempts: Menghitung jumlah percobaan yang dilakukan pemain.
+	 ↪ playAgain: Menyimpan jawaban apakah pemain ingin bermain lagi.
+
+   ➥ 2. Membangkitkan Angka Acak:
+	 ↪ srand(time(NULL)): Menggunakan waktu sistem sebagai seed untuk menghasilkan angka acak yang berbeda setiap kali permainan dijalankan.
+	 ↪ number = rand() % 20 + 1: Menghasilkan angka acak antara 1 dan 20.
+
+   ➥ 3. Loop Tebakan:
+	 ↪ Pemain diminta untuk memasukkan tebakan melalui scanf.
+	 ↪ Jika tebakan pemain lebih kecil dari angka yang dipilih komputer, program memberi petunjuk bahwa nomor komputer lebih besar, dan sebaliknya jika tebakan lebih besar.
+	 ↪ Jika tebakan pemain benar, program memberi selamat dan menampilkan jumlah percobaan yang diperlukan untuk menebak angka yang benar.
+	 ↪ Loop ini berlanjut hingga pemain berhasil menebak angka yang benar.
+
+   ➥ 4. Tanya Ulang (Apakah ingin bermain lagi?):
+	 ↪ Setelah permainan selesai, program menanyakan apakah pemain ingin bermain lagi.
+	 ↪ Jika pemain memilih 'y' atau 'Y', fungsi playGame dipanggil kembali untuk memulai permainan baru.
+	 ↪ Jika pemain memilih selain itu, permainan selesai dengan ucapan terima kasih.
+
+5. Fungsi main
+   ➥ Fungsi main hanya memanggil fungsi playGame untuk memulai permainan.
+   ➥ Program berakhir setelah permainan selesai.
+
+6. Penjelasan Program
+   ➥ 1. Input:
+         ↪ Pemain diminta untuk memasukkan tebakan angka antara 1 hingga 20.
+   ➥ 2. Proses:
+         ↪ Program memberikan petunjuk apakah tebakan pemain terlalu besar atau terlalu kecil.
+         ↪ Program terus meminta tebakan hingga pemain berhasil menebak dengan benar.
+   ➥ 3. Output:
+         ↪ Program menampilkan hasil tebakan dan jumlah percobaan yang diperlukan untuk menebak angka dengan benar.
+         ↪ Program menanyakan apakah pemain ingin bermain lagi setelah permainan selesai.
+
+7. Logika Utama
+   ➥ Angka acak dipilih oleh komputer.
+   ➥ Pemain memberikan tebakan hingga angka yang benar ditemukan.
+   ➥ Pemain diberi opsi untuk bermain lagi setelah menebak angka dengan benar.
+
+8. Keunggulan Program:
+   ➥ Menarik dan mudah dimainkan.
+   ➥ Menggunakan angka acak untuk memastikan permainan selalu berbeda setiap kali dijalankan.
