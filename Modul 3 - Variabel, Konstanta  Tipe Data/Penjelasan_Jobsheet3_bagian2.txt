@@ -1,0 +1,43 @@
+1. Judul Program
+   ➥ Program Konversi Suhu
+
+2. Fungsi Program
+   ➥ Membaca input suhu dalam skala Celcius.
+   ➥ Mengonversi suhu ke tiga skala lainnya: Kelvin, Fahrenheit, dan Reamur.
+   ➥ Menampilkan hasil konversi ke layar.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf untuk menampilkan hasil ke layar dan scanf untuk menerima input dari pengguna.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	   ↪ celcius: Variabel untuk menyimpan suhu dalam Celcius yang dimasukkan oleh pengguna.
+	   ↪ kelvin: Variabel untuk menyimpan hasil konversi suhu ke skala Kelvin.
+	   ↪ fahrenheit: Variabel untuk menyimpan hasil konversi suhu ke skala Fahrenheit.
+	   ↪ reamur: Variabel untuk menyimpan hasil konversi suhu ke skala Reamur.
+   ➥ 2. Input Suhu dalam Celcius
+	   ↪ printf: Menampilkan pesan ke layar untuk meminta pengguna memasukkan suhu dalam skala Celcius.
+	   ↪ scanf: Membaca input suhu (angka desimal) dari pengguna dan menyimpannya di variabel celcius.
+   ➥ 3. Menghitung Konversi Suhu
+           ↪ Konversi ke Kelvin: K=Celcius+273.15
+           ↪ Konversi ke Fahrenheit: F=(Celcius×1.8)+32
+	   ↪ Konversi ke Reamur: R=Celcius×0.8
+        ➥ 4. Menampilkan Hasil Konversi
+           ↪ printf digunakan untuk mencetak hasil konversi:
+		 ➺ Kelvin: Menampilkan hasil konversi ke skala Kelvin.
+		 ➺ Fahrenheit: Menampilkan hasil konversi ke skala Fahrenheit.
+		 ➺ Reamur: Menampilkan hasil konversi ke skala Reamur.
+		 ➺ Format %.2f digunakan untuk menampilkan angka desimal dengan dua angka di belakang koma.
+       ➥ 5. Keluar dari Program
+           ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ Input Suhu: Pengguna memasukkan suhu dalam Celcius.
+   ➥ Konversi Suhu:
+           ↪Menggunakan rumus untuk mengonversi suhu ke Kelvin, Fahrenheit, dan Reamur.
+   ➥ Output Hasil: Menampilkan suhu dalam ketiga skala tersebut.
+
+6. Keunggulan Program:
+   ➥ Sederhana: Mudah dipahami dan digunakan.
+   ➥ Format Output yang Rapi: Hasil ditampilkan dengan dua angka di belakang koma.
+   ➥ Fleksibilitas: Dapat digunakan untuk mengonversi berbagai nilai suhu.

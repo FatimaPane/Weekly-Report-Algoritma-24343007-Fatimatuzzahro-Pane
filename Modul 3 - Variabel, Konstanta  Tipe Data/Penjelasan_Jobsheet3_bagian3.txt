@@ -1,0 +1,51 @@
+1. Judul Program
+   ➥ Program Menghitung Volume dan Luas Permukaan Bola
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk menghitung:
+	↪ Jari-jari bola berdasarkan diameter yang telah ditentukan.
+	↪ Volume bola menggunakan rumus volume bola.
+	↪ Luas permukaan bola menggunakan rumus luas permukaan bola.
+	↪ Menampilkan hasil perhitungan ke layar.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf.
+   ➥ #define PI 3.14: Mendefinisikan nilai konstanta π sebagai 3.14, yang digunakan dalam perhitungan bola.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	   ↪ diameter: Variabel dengan tipe float yang menyimpan diameter bola (dalam cm), diinisialisasi dengan nilai 12.0 cm.
+	   ↪ jari_jari: Variabel untuk menyimpan jari-jari bola yang dihitung dari diameter.
+	   ↪ volume: Variabel untuk menyimpan hasil perhitungan volume bola.
+	   ↪ luas_permukaan: Variabel untuk menyimpan hasil perhitungan luas permukaan bola.
+   ➥ 2. Menghitung Jari-jari Bola
+           ↪ Jari-jari bola dihitung dengan membagi diameter bola dengan 2.
+   ➥ 3. Menghitung Volume Bola
+	   ↪ Rumus volume bola: V=  4/3 πr^3
+ 	   ↪ Dalam program:
+                 ➺ 4.0 / 3.0 merepresentasikan 4/3
+		 ➺ PI adalah nilai π yang telah didefinisikan sebagai 3.14.
+		 ➺ jari_jari * jari_jari * jari_jari menghitung r^3,  yaitu jari-jari pangkat tiga.
+   ➥ 4. Menghitung Luas Permukaan Bola
+	   ↪ Rumus luas permukaan bola: A=4πr^2
+ 	   ↪ Dalam program:
+		➺ 4 adalah konstanta dalam rumus.
+		➺ jari_jari * jari_jari menghitung r^2,  yaitu jari-jari pangkat dua.
+   ➥ 5. Menampilkan Hasil
+	   ↪ printf digunakan untuk menampilkan hasil perhitungan:
+		➺ Diameter bola.
+		➺ Volume bola dalam satuan cm³.
+		➺ Luas permukaan bola dalam satuan cm².
+ 	   ↪ Format %.2f digunakan untuk menampilkan angka desimal dengan dua angka di belakang koma.
+   ➥ 6. Keluar dari Program
+	   ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ Menghitung jari-jari bola dari diameter.
+   ➥ Menggunakan rumus volume bola: V=  4/3 πr^3 
+   ➥ Menggunakan rumus luas permukaan bola: A=4πr^2
+ 
+6. Keunggulan Program:
+   ➥ Sederhana dan Efektif: Program langsung menghitung dan menampilkan hasil.
+   ➥ Akurat: Menggunakan tipe data float untuk mendukung angka desimal.
+   ➥ Rumus Fisika Dasar: Dapat digunakan untuk memahami konsep volume dan luas permukaan bola.

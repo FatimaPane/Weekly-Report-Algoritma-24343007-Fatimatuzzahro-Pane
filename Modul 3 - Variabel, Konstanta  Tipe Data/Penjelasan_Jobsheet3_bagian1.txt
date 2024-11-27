@@ -1,0 +1,42 @@
+1. Judul Program
+   ➥ Program Konversi Rupiah ke Dollar
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk mengonversi nilai uang dalam Rupiah menjadi Dollar berdasarkan kurs tertentu yang telah ditentukan.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf untuk menampilkan teks ke layar dan scanf untuk menerima input dari pengguna.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	   ↪ rupiah: Variabel dengan tipe float untuk menyimpan nilai Rupiah yang dimasukkan oleh pengguna.
+	   ↪ dollar: Variabel dengan tipe float untuk menyimpan hasil konversi dari Rupiah ke Dollar.
+	   ↪ kurs: Konstanta dengan nilai 14250, yang menunjukkan nilai tukar 1 Dollar dalam Rupiah.
+   ➥ 2. Meminta Input dari Pengguna
+	   ↪ printf: Menampilkan pesan untuk meminta pengguna memasukkan jumlah uang dalam Rupiah.
+	   ↪ scanf: Membaca input angka desimal dari pengguna dan menyimpannya ke dalam variabel rupiah.
+   ➥ 3. Menghitung Konversi
+           ↪ Konversi dilakukan dengan membagi jumlah Rupiah yang dimasukkan pengguna dengan nilai kurs.
+           ↪ Hasilnya disimpan dalam variabel dollar.
+   ➥ 4. Menampilkan Hasil
+ 	   ↪ printf: Menampilkan hasil konversi ke layar dengan format:
+	   ↪ %.2f: Menampilkan angka desimal dengan dua angka di belakang koma.
+   ➥ 5. Keluar dari Program
+	   ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Penjelasan Eksekusi
+   ➥ 1. Input Pengguna:
+	   ↪ Pengguna memasukkan nilai Rupiah sebesar 285000.
+   ➥ 2. Perhitungan:
+	   ↪ Menggunakan kurs 14250, jumlah Dollar dihitung: Dollar= 14250 / 285000 = 20.00
+   ➥ 3. Output Hasil:
+           ↪ Program mencetak "Jumlah Dollar yang didapat dari 285000.00 adalah: $20.00".
+
+6. Logika Utama:
+   ➥ Meminta pengguna memasukkan jumlah uang dalam Rupiah.
+   ➥ Menghitung jumlah Dollar dengan membagi nilai Rupiah dengan kurs.
+   ➥ Menampilkan hasil konversi ke layar.
+
+7. Keunggulan Program:
+   ➥ Sederhana dan Mudah Digunakan: Program dirancang dengan input dan output yang jelas.
+   ➥ Akurat: Menggunakan tipe data float untuk mendukung angka desimal.
