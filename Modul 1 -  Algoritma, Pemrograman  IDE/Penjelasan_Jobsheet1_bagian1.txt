@@ -1,0 +1,24 @@
+1. Judul Program
+   ➥ Program Hello World
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk menampilkan pesan "Hello World!" ke layar. Program ini biasanya digunakan sebagai contoh pertama ketika belajar bahasa pemrograman C.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C untuk fungsi input-output seperti printf, yang digunakan untuk menampilkan teks ke layar.
+
+4. Fungsi main
+   ➥ int main(): Fungsi utama dalam program C. Program selalu dimulai dari fungsi main.
+   ➥ printf("Hello World!\n");: Fungsi printf digunakan untuk mencetak teks ke layar. Dalam hal ini, mencetak "Hello World!" diikuti dengan newline (\n) untuk memindahkan kursor ke baris berikutnya setelah teks dicetak.
+   ➥ return 0;: Menandakan bahwa program telah selesai berjalan dengan sukses. Nilai 0 menunjukkan tidak ada kesalahan.
+
+5. Penjelasan Program
+   ➥ Header File: Program mengimpor pustaka stdio.h yang menyediakan akses ke    fungsi printf untuk menampilkan output ke layar.
+   ➥ Fungsi Main: Fungsi main adalah titik masuk pertama saat program dijalankan.
+   ➥ Mencetak Output: Fungsi printf digunakan untuk menampilkan teks "Hello World!" ke layar.
+   ➥ Exit Status: return 0; mengindikasikan bahwa program telah selesai dengan sukses tanpa error.
+
+6. Logika Utama:
+   ➥ #include <stdio.h>: Mengimpor pustaka untuk input-output standar.
+   ➥ printf: Digunakan untuk menampilkan teks ke layar.
+   ➥ return 0;: Menandakan bahwa program selesai dengan sukses.
