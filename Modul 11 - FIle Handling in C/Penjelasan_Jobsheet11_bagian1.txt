@@ -1,0 +1,51 @@
+1. Judul Program
+   ➥ Program Input dan Simpan Data Mahasiswa ke File
+
+2. Fungsi Program
+   ➥ Program ini memungkinkan pengguna untuk memasukkan data mahasiswa seperti Nama, NIM, Jurusan, dan Program Studi. Setelah data dimasukkan, program akan menyimpannya ke dalam file datamahasiswa.txt.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf dan scanf.
+   ➥ stdlib.h: Digunakan untuk fungsi exit() (meskipun tidak digunakan dalam program ini).
+   ➥ string.h: Digunakan untuk manipulasi string (meskipun tidak digunakan langsung dalam kode ini).
+
+4. Struktur Data Mahasiswa
+   ➥ Mahasiswa adalah struktur yang menyimpan data mahasiswa, dengan elemen-elemen:
+        ↪ nama[50]: Menyimpan nama mahasiswa.
+	↪ nim[20]: Menyimpan NIM mahasiswa.
+	↪ jurusan[50]: Menyimpan jurusan mahasiswa.
+	↪ programStudi[50]: Menyimpan program studi mahasiswa.
+
+5. Fungsi inputDataMahasiswa
+   ➥Fungsi ini digunakan untuk meminta input dari pengguna dan menyimpannya ke dalam variabel dalam struktur Mahasiswa.
+   	↪ scanf(" %[^\n]%*c", m->nama) digunakan untuk membaca nama yang mengandung spasi.
+	↪ scanf("%s", m->nim) digunakan untuk membaca NIM tanpa spasi.
+	↪ Fungsi yang sama digunakan untuk jurusan dan program studi agar dapat membaca input dengan spasi.
+
+6. Fungsi simpanDataKeFile
+   ➥ simpanDataKeFile digunakan untuk menyimpan data mahasiswa ke dalam file datamahasiswa.txt.
+	↪ fopen("datamahasiswa.txt", "w") membuka file dalam mode tulis (write), jika file tidak ada, maka akan dibuat.
+	↪ fprintf digunakan untuk menulis data mahasiswa ke dalam file. Data mahasiswa ditulis dalam format yang mudah dibaca.
+	↪ Setelah selesai menulis, file ditutup dengan fclose(file), dan pesan berhasil disimpan ditampilkan.
+
+7. Penjelasan Fungsi main
+   ➥ 1. Deklarasi Variabel:
+	  ↪ mahasiswa[100]: Array untuk menyimpan data maksimal 100 mahasiswa.
+	  ↪ count: Menyimpan jumlah mahasiswa yang telah dimasukkan.
+	  ↪ pilihan: Menyimpan pilihan pengguna apakah ingin memasukkan data lagi.
+   ➥ 2. Loop untuk Input Data:
+	  ↪ Program meminta pengguna untuk memasukkan data mahasiswa satu per satu dengan memanggil inputDataMahasiswa.
+	  ↪ count++ digunakan untuk menambahkan jumlah mahasiswa yang telah dimasukkan.
+	  ↪ scanf(" %c", &pilihan) digunakan untuk membaca pilihan apakah pengguna ingin memasukkan data lagi.
+   ➥ 3. Menyimpan Data ke File:
+	  ↪ Setelah selesai, program memanggil simpanDataKeFile untuk menyimpan data mahasiswa ke dalam file datamahasiswa.txt.
+
+8. Logika Utama:
+   ➥ Program meminta input data mahasiswa (Nama, NIM, Jurusan, Program Studi).
+   ➥ Program menyimpan data mahasiswa ke dalam file menggunakan fopen, fprintf, dan fclose.
+   ➥ Program memungkinkan pengguna untuk memasukkan data lebih dari satu mahasiswa dan menyimpan seluruh data setelah selesai.
+
+9. Keunggulan Program:
+   ➥ Sederhana: Program ini mudah digunakan untuk memasukkan dan menyimpan data.
+   ➥ Fleksibel: Program dapat menyimpan hingga 100 data mahasiswa.
+   ➥ Penyimpanan File: Data disimpan dalam file teks yang dapat diakses dan diperiksa.
