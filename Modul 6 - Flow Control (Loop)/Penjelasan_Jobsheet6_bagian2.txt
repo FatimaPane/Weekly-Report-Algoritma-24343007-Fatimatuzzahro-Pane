@@ -1,0 +1,54 @@
+1. Judul Program
+   ➥ Program Menampilkan Pola Segitiga dengan Bintang
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk menampilkan pola segitiga dengan bintang pada layar. Pola terdiri dari beberapa baris dengan jumlah bintang di setiap baris sesuai nomor baris (1 bintang di baris pertama, 2 di baris kedua, dst.).
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	 ↪ i: Variabel penghitung untuk loop baris.
+	 ↪ j: Variabel penghitung untuk loop kolom (jumlah bintang dalam setiap baris).
+	 ↪ n: Menyimpan jumlah baris yang akan ditampilkan. Diinisialisasi dengan nilai 5.
+   ➥ 2. Loop untuk Mencetak Pola
+         ↪ 2.1. Loop Baris
+		➺ Loop ini berjalan dari 1 hingga n (5).
+		➺ Setiap iterasi mewakili satu baris pola
+	 ↪ 2.2. Loop Kolom
+		➺ Loop ini mencetak bintang (*) pada baris tertentu.
+		➺ Jumlah bintang pada setiap baris sesuai dengan nilai i (nomor baris).
+			➢ Baris ke-1: 1 bintang.
+			➢ Baris ke-2: 2 bintang.
+			➢ Baris ke-3: 3 bintang.
+			➢ Dan seterusnya.
+         ↪ 2.3. Baris Baru
+		➺ Setelah mencetak bintang di setiap baris, program mencetak baris baru untuk memulai baris berikutnya.
+   ➥ 3. Keluar dari Program
+	 ↪ return 0; = Menandakan bahwa program selesai berjalan tanpa kesalahan.
+
+5. Penjelasan Output:
+   ➥ 1. Baris Pertama (i = 1):
+	 ↪ Loop Kolom: 1 bintang (j = 1 hingga j <= 1).
+	 ↪ Output: *.
+   ➥ 2. Baris Kedua (i = 2):
+	 ↪ Loop Kolom: 2 bintang (j = 1 hingga j <= 2).
+	 ↪ Output: **.
+   ➥ 3. Baris Ketiga (i = 3):
+	 ↪ Loop Kolom: 3 bintang (j = 1 hingga j <= 3).
+	 ↪ Output: ***.
+   ➥ 4. Baris Keempat (i = 4):
+	 ↪ Loop Kolom: 4 bintang (j = 1 hingga j <= 4).
+	 ↪ Output: ****.
+   ➥ 5. Baris Kelima (i = 5):
+	 ↪ Loop Kolom: 5 bintang (j = 1 hingga j <= 5).
+	 ↪ Output: *****.
+
+6. Logika Utama:
+   ➥ Outer Loop (i): Mengatur jumlah baris.
+   ➥ Inner Loop (j): Mengatur jumlah bintang dalam setiap baris.
+
+7. Keunggulan Program:
+   ➥ Sederhana: Struktur kode mudah dipahami.
+   ➥ Fleksibel: Jumlah baris dapat diubah dengan mengganti nilai n.

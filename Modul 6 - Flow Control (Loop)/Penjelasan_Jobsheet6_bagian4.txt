@@ -1,0 +1,65 @@
+1. Judul Program = Simulasi ATM dengan Menu Interaktif
+
+2. Fungsi Program =
+  ➥ Mengecek saldo.
+  ➥ Melakukan setoran tunai.
+  ➥ Melakukan penarikan tunai (dengan aturan saldo minimal Rp 50.000).
+  ➥ Keluar dari aplikasi.
+
+3. Header File
+  ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf (menampilkan data) dan scanf (menerima input).
+
+4. Fungsi Utama dalam Program
+4.1. Fungsi cek_saldo
+  ➥ Input: Nilai saldo.
+  ➥ Fungsi: Menampilkan saldo terkini.
+  ➥ Output: Menampilkan informasi saldo dalam format rupiah.
+4.2. Fungsi setoran
+  ➥ Input: Saldo awal dan jumlah setoran.
+  ➥ Fungsi:
+     ↪ Meminta pengguna untuk memasukkan jumlah uang yang ingin disetor.
+     ↪ Menambahkan jumlah setoran ke saldo.
+     ↪ Menampilkan saldo setelah setoran berhasil.
+  ➥ Output: Saldo terkini setelah setoran.
+  ➥ Return Value: Saldo terbaru.
+4.3. Fungsi penarikan
+  ➥ Input: Saldo awal dan jumlah penarikan.
+  ➥ Fungsi:
+     ↪ Meminta pengguna untuk memasukkan jumlah uang yang ingin ditarik.
+     ↪ Mengecek apakah saldo setelah penarikan akan di bawah Rp 50.000:
+          ↪ Jika ya, penarikan ditolak.
+          ↪ Jika tidak, saldo dikurangi jumlah penarikan.
+     ↪ Menampilkan saldo setelah penarikan berhasil.
+  ➥ Output: Pesan tentang status penarikan.
+  ➥ Return Value: Saldo terbaru setelah penarikan (jika berhasil).
+
+5. Fungsi main
+  ➥ Fungsi ini mengatur menu interaktif untuk pengguna.
+5.1. Deklarasi Variabel
+  ➥ pilihan: Menyimpan pilihan menu dari pengguna.
+  ➥ saldo: Saldo awal yang diatur menjadi Rp 175.000.
+5.2. Menampilkan Menu
+  ➥ Proses Menu:
+      1. Menampilkan Menu:
+         ↪ Menampilkan opsi pilihan menu ATM kepada pengguna.
+      2. Input Pilihan:
+         ↪ Menggunakan scanf untuk membaca pilihan pengguna.
+      3. switch-case:
+         ↪ Case 1: Menjalankan fungsi cek_saldo.
+         ↪ Case 2: Menjalankan fungsi setoran dan memperbarui saldo.
+         ↪ Case 3: Menjalankan fungsi penarikan dan memperbarui saldo.
+         ↪ Case 4: Keluar dari program dengan menampilkan pesan terima kasih.
+         ↪ Default: Menampilkan pesan jika input pilihan tidak valid.
+      4. Pengulangan Menu:
+         ↪ Menggunakan do-while untuk mengulangi menu sampai pengguna memilih keluar (4).
+
+6. Kesimpulan
+  ➥ Fungsi Program:
+     ↪ Program ini mensimulasikan fungsi dasar ATM seperti cek saldo, setoran tunai, dan penarikan tunai dengan aturan saldo minimum.
+  ➥ Logika Utama:
+     ↪ 1. do-while untuk menampilkan menu hingga pengguna memilih keluar.
+     ↪ 2. switch-case untuk mengelola berbagai pilihan menu.
+     ↪ 3. Aturan saldo minimum diterapkan pada fungsi penarikan untuk memastikan saldo tidak kurang dari Rp 50.000.
+  ➥ Keunggulan Program:
+     ↪ Simpel dan interaktif.
+     ↪ Memberikan validasi untuk saldo minimum saat penarikan.

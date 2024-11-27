@@ -1,0 +1,53 @@
+1. Judul Program
+   ➥ Program Menampilkan Deret Bilangan Genap dan Ganjil
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk:
+	↪ Menampilkan semua bilangan genap dari 0 hingga 50.
+	↪ Menampilkan semua bilangan ganjil dari 0 hingga 50.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf.
+
+4. Fungsi main
+   ➥ 1. Menampilkan Deret Bilangan Genap
+	   ↪ printf: Menampilkan pesan "Deret bilangan genap dari 0 hingga 50:".
+	   ↪ for (int i = 0; i <= 50; i++):
+		➺ Loop untuk iterasi dari 0 hingga 50.
+		➺ Variabel i bertindak sebagai penghitung.
+	   ↪ if (i % 2 == 0):
+		➺ Kondisi untuk mengecek apakah angka i genap.
+		➺ Bilangan genap adalah bilangan yang habis dibagi 2 (sisa bagi 0).
+	   ↪ printf("%d ", i):
+		➺ Menampilkan bilangan genap yang memenuhi kondisi di atas.
+   ➥ 2. Menampilkan Deret Bilangan Ganjil
+	   ↪ printf: Menampilkan pesan "Deret bilangan ganjil dari 0 hingga 50:".
+	   ↪ for (int i = 0; i <= 50; i++):
+		➺ Loop untuk iterasi dari 0 hingga 50.
+		➺ Variabel i bertindak sebagai penghitung.
+	   ↪ if (i % 2 != 0):
+		➺ Kondisi untuk mengecek apakah angka i ganjil.
+		➺ Bilangan ganjil adalah bilangan yang tidak habis dibagi 2 (sisa bagi tidak 0).
+	   ↪ printf("%d ", i):
+		➺ Menampilkan bilangan ganjil yang memenuhi kondisi di atas.
+   ➥ 3. Keluar dari Program
+	   ↪ Menandakan bahwa program selesai berjalan tanpa kesalahan.
+
+5. Penjelasan Eksekusi
+   ➥ 1. Deret Bilangan Genap:
+	   ↪ Loop iterasi i dimulai dari 0 hingga 50.
+ 	   ↪ Bilangan yang memenuhi kondisi i % 2 == 0 ditampilkan sebagai bilangan genap.
+	   ↪ Contoh bilangan genap: 0, 2, 4, ..., 50.
+   ➥ 2. Deret Bilangan Ganjil:
+	   ↪ Loop iterasi i dimulai dari 0 hingga 50.
+	   ↪ Bilangan yang memenuhi kondisi i % 2 != 0 ditampilkan sebagai bilangan ganjil.
+ 	   ↪ Contoh bilangan ganjil: 1, 3, 5, ..., 49.
+
+6. Logika Utama:
+   ➥ Iterasi angka dari 0 hingga 50 menggunakan for.
+   ➥ Mengecek apakah angka genap (i % 2 == 0) atau ganjil (i % 2 != 0) menggunakan if.
+
+7. Keunggulan Program:
+   ➥ Sederhana: Struktur kode mudah dipahami.
+   ➥ Efisien: Hanya memeriksa kondisi genap/ganjil menggunakan modulus.
+   ➥ Interaktif: Menampilkan hasil secara terpisah untuk bilangan genap dan ganjil.
