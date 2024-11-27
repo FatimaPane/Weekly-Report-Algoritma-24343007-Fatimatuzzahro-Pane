@@ -1,0 +1,42 @@
+1. Judul Program
+   ➥ Program Konversi Waktu dari Detik ke Jam, Menit, dan Detik
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk:
+	↪ Mengubah waktu dalam satuan detik menjadi format jam, menit, dan detik.
+	↪ Menampilkan hasil konversi ke layar.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf untuk menampilkan hasil ke layar dan scanf untuk membaca input dari pengguna.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	  ↪ total_detik: Variabel untuk menyimpan input waktu dalam satuan detik.
+	  ↪ jam: Variabel untuk menyimpan hasil konversi waktu dalam satuan jam.
+	  ↪ menit: Variabel untuk menyimpan hasil konversi waktu dalam satuan menit.
+	  ↪ detik: Variabel untuk menyimpan sisa waktu dalam satuan detik setelah dikonversi.
+
+   ➥ 2. Membaca Input Waktu dalam Detik
+          ↪ printf: Menampilkan pesan untuk meminta pengguna memasukkan waktu dalam detik.
+	  ↪ scanf: Membaca input angka dari pengguna dan menyimpannya di variabel total_detik.
+
+   ➥ 3. Mengonversi Waktu
+          ↪ 3.1. Menghitung Jumlah Jam
+	  ↪ 3.2. Sisa Detik Setelah Jam
+	  ↪ 3.3. Menghitung Jumlah Menit
+	  ↪ 3.4. Sisa Detik Setelah Menit
+
+   ➥  4. Menampilkan Hasil Konversi
+          ↪ printf: Menampilkan hasil konversi waktu dalam format jam, menit, dan detik.
+
+   ➥ 5. Keluar dari Program
+          ↪ return 0; = Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ Menghitung jumlah jam dari total detik.
+   ➥ Menghitung jumlah menit dari sisa detik setelah jam.
+   ➥ Menghitung jumlah detik yang tersisa setelah menit.
+
+6. Keunggulan Program:
+   ➥ Efisien: Menggunakan perhitungan langsung dengan operasi matematika sederhana.
+   ➥ Interaktif: Meminta input dari pengguna dan menampilkan hasil yang informatif.

@@ -1,0 +1,51 @@
+1. Judul Program
+   ➥ Program Penghitungan Nilai Akhir Praktikum
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk:
+	↪ Menghitung nilai akhir seorang mahasiswa berdasarkan bobot nilai Presensi, Praktek, UTS, dan UAS.
+	↪ Menampilkan hasil nilai akhir ke layar.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	  ↪ presensi: Variabel untuk menyimpan nilai presensi (kehadiran).
+	  ↪ praktek: Variabel untuk menyimpan nilai praktek.
+	  ↪ uts: Variabel untuk menyimpan nilai UTS (Ujian Tengah Semester).
+	  ↪ uas: Variabel untuk menyimpan nilai UAS (Ujian Akhir Semester).
+	  ↪ nilai_akhir: Variabel untuk menyimpan hasil perhitungan nilai akhir.
+   ➥ 2. Inisialisasi Nilai
+	  ↪ Nilai presensi, praktek, UTS, dan UAS diberikan secara langsung dalam program:
+	      ➺ Presensi: 85
+	      ➺ Praktek: 65
+	      ➺ UTS: 80
+	      ➺ UAS: 75
+
+   ➥ 3. Menghitung Nilai Akhir
+          ↪ Perhitungan dilakukan dengan rumus: 
+	      ➺ Nilai Akhir=(Presensi×10%)+(Praktek×20%)+(UTS×30%)+(UAS×40%)
+	  ↪ Bobot masing-masing komponen adalah:
+	      ➺ Presensi: 10% (0.10)
+	      ➺ Praktek: 20% (0.20)
+ 	      ➺ UTS: 30% (0.30)
+	      ➺ UAS: 40% (0.40)
+
+   ➥ 4. Menampilkan Hasil
+         ↪ printf digunakan untuk mencetak hasil nilai akhir dengan format dua angka desimal (%.2f).
+   ➥ 5. Keluar dari Program
+         ↪  Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ 1. Menggunakan bobot:
+         ↪ Presensi: 10%
+         ↪ Praktek: 20%
+         ↪ UTS: 30%
+         ↪ UAS: 40%
+   ➥ 2. Mengalikan nilai masing-masing komponen dengan bobotnya.
+   ➥ 3. Menjumlahkan hasil untuk mendapatkan nilai akhir.
+
+6. Keunggulan Program:
+   ➥ Sederhana dan Langsung: Hanya memerlukan input nilai dari variabel.
+   ➥ Akurat: Menggunakan tipe data float untuk mendukung angka desimal.

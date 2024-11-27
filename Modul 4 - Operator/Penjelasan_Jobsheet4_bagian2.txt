@@ -1,0 +1,43 @@
+1. Judul Program
+   ➥ Program Struk Pembelian
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk:
+	↪ Menerima input berupa nama pembeli, nama barang, harga satuan, dan jumlah barang.
+	↪ Menghitung harga total barang yang dibeli.
+	↪ Menampilkan struk pembelian berupa data pembeli, barang, harga satuan, jumlah barang, dan harga total.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf dan scanf.
+   ➥ string.h: Digunakan untuk fungsi manipulasi string, seperti strcspn untuk menghapus karakter newline (\n).
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	  ↪ nama_pembeli: Array karakter untuk menyimpan nama pembeli.
+	  ↪ nama_barang: Array karakter untuk menyimpan nama barang.
+	  ↪ jumlah_barang: Variabel untuk menyimpan jumlah barang yang dibeli.
+	  ↪ harga_satuan: Variabel untuk menyimpan harga satuan barang.
+	  ↪ harga_total: Variabel untuk menyimpan hasil perhitungan total harga barang.
+   ➥ 2. Input Data
+	  ↪ fgets: Membaca nama pembeli termasuk spasi hingga panjang maksimum nama_pembeli.
+	  ↪ strcspn: Menghapus karakter newline (\n) yang otomatis ditambahkan oleh fgets setelah membaca input.
+   ➥ 3. Menghitung Harga Total
+          ↪ Mengalikan harga satuan dengan jumlah barang untuk mendapatkan total harga.
+   ➥ 4. Menampilkan Hasil (Struk Pembelian)
+	  ↪ printf digunakan untuk mencetak:
+		➺ Nama pembeli dan barang.
+		➺ Harga satuan barang dalam format desimal dua angka di belakang koma (%.2f).
+		➺ Jumlah barang sebagai bilangan bulat.
+		➺ Harga total barang dalam format desimal dua angka di belakang koma.
+   ➥ 5. Keluar dari Program
+	  ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama
+   ➥ Membaca input data seperti nama pembeli, nama barang, harga satuan, dan jumlah barang.
+   ➥ Menghitung harga total barang.
+   ➥ Menampilkan struk pembelian.
+
+6. Keunggulan Program:
+   ➥ Interaktif: Meminta input dari pengguna secara langsung.
+   ➥ Sederhana: Proses input, perhitungan, dan output dijalankan secara efisien.
+   ➥ Rapi: Menampilkan output dalam format struk pembelian yang mudah dipahami.

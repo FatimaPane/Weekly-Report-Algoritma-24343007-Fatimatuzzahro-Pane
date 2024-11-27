@@ -1,0 +1,44 @@
+1. Judul Program
+   ➥ Program Menghitung Biaya Nonton Film Berdasarkan Durasi
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk:
+	↪ Menghitung total biaya sewa film berdasarkan durasi menonton dalam jam.
+	↪ Memberikan tarif khusus untuk jam tambahan setelah jam pertama:
+	      ➺ Jam pertama dikenakan tarif penuh.
+	      ➺ Jam selanjutnya dikenakan tarif 50% dari tarif pertama.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf dan scanf.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+   	  ↪ durasi: Variabel bertipe integer untuk menyimpan durasi menonton dalam jam.
+	  ↪ tarif_pertama: Variabel bertipe float yang menyimpan tarif untuk jam pertama (Rp 15.000).
+	  ↪ tarif_selanjutnya: Variabel bertipe float untuk menyimpan tarif per jam setelah jam pertama (50% dari tarif_pertama).
+	  ↪ total_biaya: Variabel bertipe float untuk menyimpan hasil total biaya sewa film.
+   ➥ 2. Input Durasi Menonton
+          ↪ printf: Menampilkan pesan untuk meminta pengguna memasukkan durasi menonton dalam jam.
+	  ↪ scanf: Membaca input durasi (angka bulat) dari pengguna dan menyimpannya di variabel durasi.
+   ➥ 3. Menghitung Total Biaya
+	  ↪ Jika durasi menonton adalah 1 jam, total biaya sama dengan tarif_pertama (Rp 15.000).
+	  ↪ Jika durasi lebih dari 1 jam:
+               ➺ tarif_selanjutnya dihitung sebagai 50% dari tarif_pertama.
+	       ➺ Tarif jam pertama: tarif_pertama.
+	       ➺ Biaya jam tambahan: tarif_selanjutnya * (durasi - 1).
+   ➥ 4. Menampilkan Hasil
+          ↪ printf digunakan untuk menampilkan total biaya sewa berdasarkan durasi.
+	  ↪ Format %.2f digunakan untuk menampilkan angka desimal dengan dua angka di belakang koma.
+   ➥ 5. Keluar dari Program
+          ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ Jika durasi menonton adalah 1 jam, maka total biaya sama dengan tarif pertama.
+   ➥ Jika durasi lebih dari 1 jam:
+          ↪ Hitung tarif jam tambahan sebagai 50% dari tarif pertama.
+	  ↪ Tambahkan tarif jam pertama dengan tarif untuk jam tambahan.
+
+6. Keunggulan Program:
+   ➥ Sederhana: Program hanya memerlukan input durasi menonton.
+   ➥ Fleksibel: Program dapat menghitung biaya untuk berbagai durasi.
+   ➥ Akurat: Menggunakan tipe data float untuk mendukung nilai desimal.
