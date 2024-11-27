@@ -1,0 +1,43 @@
+1. Judul Program
+   ➥ Program Menghitung Luas Segitiga
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk menghitung dan menampilkan luas segitiga berdasarkan panjang alas dan tinggi yang telah ditentukan.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf untuk menampilkan hasil perhitungan ke layar.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+           ↪ alas: Variabel dengan tipe float untuk menyimpan panjang alas segitiga (dalam cm), diinisialisasi dengan nilai 8.0.
+	   ↪ tinggi: Variabel dengan tipe float untuk menyimpan tinggi segitiga (dalam cm), diinisialisasi dengan nilai 5.0.
+	   ↪ luas: Variabel dengan tipe float untuk menyimpan hasil perhitungan luas segitiga.
+   ➥ 2. Menghitung Luas Segitiga
+	   ↪ Rumus luas segitiga: Luas= 1/2 × alas × tinggi
+           ↪ Dalam program, perhitungan dilakukan dengan:
+		➺ 0.5 sebagai pengganti 1/2
+		➺ alas dikalikan dengan tinggi.
+           ↪ Hasil disimpan ke variabel luas.
+  ➥ 3. Menampilkan Hasil
+	   ↪ printf digunakan untuk mencetak hasil perhitungan ke layar.
+	   ↪ Format %.2f digunakan untuk menampilkan angka desimal dengan dua angka di belakang koma.
+ ➥ 4. Keluar dari Program
+	   ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Penjelasan Eksekusi
+   ➥ 1. Deklarasi Variabel:
+	   ↪ alas diinisialisasi dengan 8.0 cm.
+	   ↪ tinggi diinisialisasi dengan 5.0 cm.
+   ➥ 2. Perhitungan: Luas = 1/2 x 8 x 5 = 20 cm^2
+   ➥ 3. Hasil Ditampilkan:
+           ↪ Program mencetak "luas segitiga dengan alas 8.00 cm dan tinggi 5.00 cm adalah 20.00 cm^2".
+
+6. Logika Utama:
+   ➥ Menggunakan rumus luas segitiga: Luas = 1/2 x alas x tinggi
+   ➥ Menyimpan hasil perhitungan ke dalam variabel luas.
+   ➥ Menampilkan hasil perhitungan dengan format desimal dua angka.
+
+7. Keunggulan Program:
+   ➥ Sederhana dan langsung ke tujuan.
+   ➥ Menggunakan tipe data float untuk mendukung nilai desimal.
+   ➥ Menampilkan hasil dengan format yang rapi (dua angka di belakang koma).

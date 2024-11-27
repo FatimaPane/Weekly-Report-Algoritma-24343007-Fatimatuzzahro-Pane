@@ -1,0 +1,42 @@
+1. Judul Program
+   ➥ Program Input Data Mahasiswa dan Perhitungan Nilai Akhir
+
+2. Fungsi Program
+   ➥ Memasukkan data mahasiswa seperti Nama, NIM, Program Studi, dan Fakultas.
+   ➥ Memasukkan nilai Praktikum, UTS, dan UAS.
+   ➥ Menghitung Nilai Akhir berdasarkan bobot:
+        ↪ Praktikum: 30%
+        ↪ UTS: 30%
+        ↪ UAS: 40%
+   ➥ Menampilkan semua data beserta nilai akhir.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf dan scanf, serta fgets untuk membaca string dengan spasi.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	   ↪ Variabel char digunakan untuk menyimpan data string seperti Nama, NIM, Program Studi, dan Fakultas.
+	   ↪ Variabel float digunakan untuk menyimpan nilai Praktikum, UTS, dan UAS, serta hasil perhitungan nilai akhir.
+   ➥ 2. Meminta Input dari Pengguna
+           ↪ Input String
+		➺ fgets digunakan untuk membaca input string termasuk spasi.
+		➺ sizeof(nama) memastikan bahwa panjang input tidak melebihi ukuran array nama.
+		➺ Proses ini diulangi untuk NIM, Program Studi, dan Fakultas.
+
+           ↪ Input Nilai
+		➺ scanf digunakan untuk membaca nilai angka desimal (float).
+		➺ Proses ini diulangi untuk nilai UTS dan UAS.
+  ➥ 3. Menghitung Nilai Akhir
+           ↪ Menggunakan bobot:
+		➺ Praktikum = 30% = 0.3
+		➺ UTS = 30% = 0.3
+		➺ UAS = 40% = 0.4
+	   ↪ Nilai akhir dihitung sebagai rata-rata berbobot.
+  ➥ 4. Menampilkan Hasil
+	   ↪ String Data: Nama, NIM, Program Studi, dan Fakultas ditampilkan apa adanya.
+	   ↪ Nilai: Nilai Praktikum, UTS, UAS, dan Nilai Akhir ditampilkan dalam format desimal dengan dua angka di belakang koma (%.2f).
+
+5. Keunggulan Program:
+  ➥ Interaktif: Program meminta input data langsung dari pengguna.
+  ➥ Mudah Dipahami: Struktur input dan output sederhana.
+  ➥ Fleksibel: Bisa digunakan untuk menghitung nilai mahasiswa lain dengan mudah.

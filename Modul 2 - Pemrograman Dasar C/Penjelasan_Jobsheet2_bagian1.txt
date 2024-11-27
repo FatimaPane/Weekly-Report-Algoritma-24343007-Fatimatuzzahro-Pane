@@ -1,0 +1,43 @@
+1. Judul Program
+   ➥ Program Menyapa Pengguna dengan Nama
+
+2. Fungsi Program
+   ➥ Program ini meminta pengguna untuk memasukkan nama lengkap, kemudian menampilkan pesan "Selamat Datang [Nama] dalam Pemrograman C!".
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf untuk menampilkan teks ke layar dan fgets untuk membaca input.
+
+4. Fungsi main
+   ➥ char nama[30];: Deklarasi array karakter (string) dengan ukuran 30, digunakan untuk menyimpan nama lengkap yang diinput oleh pengguna.
+
+5. Proses Program
+   ➥ 1. Menampilkan Pesan Awal
+	   ↪ Menampilkan teks "Hello, siapa nama lengkapmu?" ke layar untuk meminta pengguna memasukkan nama.
+   ➥ 2. Membaca Input Nama
+	   ↪ fgets digunakan untuk membaca string (termasuk spasi) yang dimasukkan oleh pengguna hingga panjang maksimum sizeof(nama) - 1 atau hingga ditemukan newline (\n).
+	   ↪ sizeof(nama) memastikan panjang maksimum string yang bisa dimasukkan sesuai ukuran array nama (30 karakter dalam hal ini).
+   ➥ 3. Menampilkan Pesan Selamat Datang
+           ↪ Menampilkan pesan "Selamat Datang [Nama] dalam Pemrograman C!" dengan mengganti %s menggunakan string yang disimpan di variabel nama.
+   ➥ 4. Keluar dari Program
+           ↪ Menandakan bahwa program selesai dijalankan dengan sukses.
+
+6. Penjelasan Program
+   ➥ Input Pengguna: Program meminta pengguna memasukkan nama lengkap melalui fgets.
+   ➥ Penyimpanan Nama: Nama yang dimasukkan pengguna disimpan di variabel nama.
+   ➥ Menampilkan Output: Program mencetak pesan selamat datang dengan menyisipkan nama pengguna.
+
+7. Catatan
+   ➥ 1. Karakter Newline (\n):
+          ↪ fgets menyertakan karakter newline (\n) di akhir string yang dimasukkan. Untuk menghilangkannya.
+	  ↪ strcspn dari pustaka string.h digunakan untuk mencari posisi karakter newline dan menggantinya dengan null terminator (\0).
+   ➥ 2. Ukuran Input:
+          ↪ Jika nama lebih panjang dari 30 karakter, fgets hanya membaca hingga 29 karakter (ditambah null terminator \0). Pastikan ukuran array mencukupi kebutuhan input.
+
+8. Logika Utama:
+   ➥ Meminta Input: Program meminta pengguna memasukkan nama lengkap menggunakan fgets.
+   ➥ Menyimpan Nama: Nama disimpan dalam variabel string nama.
+   ➥ Menampilkan Output: Program menampilkan pesan selamat datang dengan nama pengguna.
+
+9. Keunggulan Program:
+   ➥ Interaktif: Program melibatkan input pengguna dan memberikan respons personal.
+   ➥ Mudah Dipahami: Program sederhana dan efektif sebagai contoh dasar pemrograman C.

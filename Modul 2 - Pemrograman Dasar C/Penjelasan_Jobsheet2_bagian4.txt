@@ -1,0 +1,42 @@
+1. Judul Program
+   ➥ Program Menghitung Luas Persegi Panjang
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk menghitung dan menampilkan luas persegi panjang berdasarkan panjang dan lebar yang telah ditentukan.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar C yang digunakan untuk fungsi input-output seperti printf untuk menampilkan hasil perhitungan ke layar.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+           ↪ panjang: Variabel dengan tipe float untuk menyimpan panjang persegi panjang (dalam cm), diinisialisasi dengan nilai 10.0.
+	   ↪ lebar: Variabel dengan tipe float untuk menyimpan lebar persegi panjang (dalam cm), diinisialisasi dengan nilai 5.0.
+	   ↪ luas: Variabel dengan tipe float untuk menyimpan hasil perhitungan luas persegi panjang.
+   ➥ 2. Menghitung Luas Persegi Panjang
+           ↪ Rumus luas persegi panjang: Luas = Panjang × lebar
+	   ↪ Dalam program, panjang dikalikan dengan lebar, dan hasilnya disimpan ke variabel luas.
+   ➥ 3. Menampilkan Hasil
+	   ↪ printf digunakan untuk mencetak hasil perhitungan ke layar.
+	   ↪ Format %.2f digunakan untuk menampilkan angka desimal dengan dua angka di belakang koma.
+   ➥ 4. Keluar dari Program
+	   ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Penjelasan Eksekusi
+   ➥ 1. Deklarasi Variabel:
+           ↪ panjang diinisialisasi dengan 10.0 cm.
+	   ↪ lebar diinisialisasi dengan 5.0 cm.
+   ➥ 2. Perhitungan:
+           ↪ Rumus Luas:  Luas= 10.0 × 5.0 = 50.0cm^2
+ 
+   ➥ 3. Hasil Ditampilkan:
+           ↪ Program mencetak "luas persegi panjang dengan panjang 10.00 cm dan lebar adalah 50.00 cm^2".
+
+6. Logika Utama:
+   ➥ Menggunakan rumus luas persegi Panjang  
+   ➥ Menyimpan hasil perhitungan ke dalam variabel luas.
+   ➥ Menampilkan hasil perhitungan dengan format desimal dua angka.
+
+7. Keunggulan Program:
+   ➥ Sederhana dan Langsung: Program melakukan tugas spesifik dengan jelas.
+   ➥ Penggunaan Tipe Data Float: Mendukung perhitungan dengan nilai desimal.
+   ➥ Format Output yang Rapi: Menampilkan hasil dengan dua angka di belakang koma.
