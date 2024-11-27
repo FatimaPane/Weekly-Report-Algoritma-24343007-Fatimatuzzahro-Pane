@@ -1,0 +1,47 @@
+1. Judul Program
+   ➥ Program Penilaian Mahasiswa Berdasarkan Bobot dan Grade
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk:
+	↪ Menerima input nilai mahasiswa untuk kehadiran, tugas, UTS, dan UAS.
+	↪ Menghitung nilai akhir berdasarkan bobot tertentu.
+	↪ Menentukan grade dan memberikan keterangan lulus atau tidak lulus berdasarkan rentang nilai.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf dan scanf.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	↪ nilai_kehadiran: Menyimpan nilai kehadiran mahasiswa.
+	↪ nilai_tugas: Menyimpan nilai tugas mahasiswa.
+	↪ nilai_uts: Menyimpan nilai UTS mahasiswa.
+	↪ nilai_uas: Menyimpan nilai UAS mahasiswa.
+	↪ nilai_akhir: Menyimpan hasil perhitungan nilai akhir berdasarkan bobot.
+   ➥ 2. Input Nilai
+	↪ Program meminta input nilai dari pengguna untuk masing-masing komponen penilaian.
+	↪ scanf digunakan untuk membaca nilai desimal (float).
+   ➥ 3. Menghitung Nilai Akhir
+	↪ Rumus: Nilai Akhi r= (Kehadiran×20%)+(Tugas×20%)+(UTS×25%)+(UAS×35%)
+	↪ Bobot masing-masing komponen:
+	     ➺ Kehadiran: 20% (0.20)
+	     ➺ Tugas: 20% (0.20)
+	     ➺ UTS: 25% (0.25)
+	     ➺ UAS: 35% (0.35)
+  ➥ 4. Menampilkan Nilai Akhir
+	↪ Menampilkan nilai akhir dengan dua angka di belakang koma (%.2f).
+  ➥ 5. Menentukan Grade
+	↪ Kondisi if-else digunakan untuk menentukan grade berdasarkan rentang nilai yang sudah diberikan.
+  ➥ 6. Validasi Nilai Tidak Valid
+	↪ Jika nilai tidak berada dalam rentang 0–100, program menampilkan pesan error.
+  ➥ 7. Keluar dari Program
+	↪ return 0; = Menandakan bahwa program selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+  ➥ Mengalikan setiap komponen nilai dengan bobotnya.
+  ➥ Menjumlahkan hasil perkalian untuk mendapatkan nilai akhir.
+  ➥ Menentukan grade berdasarkan rentang nilai akhir.
+
+6. Keunggulan Program:
+  ➥ Fleksibel: Menerima input nilai untuk berbagai komponen.
+  ➥ Akurat: Menggunakan tipe data float untuk mendukung perhitungan desimal.
+  ➥ Informasi Lengkap: Menyediakan grade dan keterangan kelulusan.

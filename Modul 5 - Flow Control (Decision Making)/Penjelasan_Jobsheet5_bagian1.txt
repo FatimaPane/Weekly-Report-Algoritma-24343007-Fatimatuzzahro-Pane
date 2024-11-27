@@ -1,0 +1,47 @@
+1. Judul Program
+   ➥ Program Kalkulator Sederhana
+
+2. Fungsi Program
+   ➥ Menampilkan menu pilihan operasi matematika:
+	↪ Penjumlahan
+	↪ Pengurangan
+	↪ Perkalian
+	↪Pembagian
+	↪ Hasil bagi (modulus)
+   ➥ Meminta dua bilangan sebagai input.
+   ➥ Melakukan operasi yang dipilih pengguna berdasarkan input.
+   ➥ Menampilkan hasil dari operasi yang dilakukan.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf dan scanf.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+          ↪ pilihan: Variabel untuk menyimpan pilihan operasi (1–5) yang dimasukkan oleh pengguna.
+	  ↪ bil1 dan bil2: Variabel untuk menyimpan dua bilangan yang akan dioperasikan.
+	  ↪ hasil: Variabel untuk menyimpan hasil dari operasi aritmatika.
+   ➥ 2. Menampilkan Menu Operasi
+	  ↪ Menampilkan daftar operasi yang dapat dilakukan oleh kalkulator.
+	  ↪ scanf membaca pilihan operasi yang diinginkan pengguna dan menyimpannya di variabel pilihan.
+   ➥ 3. Meminta Input Dua Bilangan
+	  ↪ Program meminta dua bilangan sebagai input untuk melakukan operasi aritmatika.
+   ➥ 4. Operasi Berdasarkan Pilihan (Switch Case)
+          ↪ Case 1: Penjumlahan
+	  ↪ Case 2: Pengurangan
+	  ↪ Case 3: Perkalian
+	  ↪ Case 4: Pembagian
+	  ↪ Case 5: Modulus
+	  ↪ Default: Pilihan Tidak Valid
+ 	      ➺ Jika pilihan tidak berada di antara 1–5, program menampilkan pesan bahwa pilihan tidak valid.
+   ➥ 5. Keluar dari Program
+	  ↪ Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ Menampilkan menu pilihan operasi.
+   ➥ Meminta input bilangan pertama dan kedua.
+   ➥ Menggunakan switch case untuk memilih dan menjalankan operasi aritmatika.
+
+6. Keunggulan Program:
+   ➥ Fleksibel: Dapat melakukan lima jenis operasi aritmatika.
+   ➥ Aman: Menangani kasus pembagian dengan nol.
+   ➥ Interaktif: Meminta input pengguna untuk menentukan operasi dan bilangan.

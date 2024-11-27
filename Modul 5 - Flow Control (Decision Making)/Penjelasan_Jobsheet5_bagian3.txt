@@ -1,0 +1,53 @@
+1. Judul Program
+   ➥ Program Menghitung Luas Permukaan Bentuk Geometri
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk menghitung luas permukaan berdasarkan pilihan bentuk geometri:
+	↪ Bola
+	↪ Kubus
+	↪ Balok
+	↪ Tabung
+   ➥ Pengguna memasukkan parameter (seperti jari-jari, panjang, lebar, tinggi), dan program menghitung serta menampilkan luas permukaan.
+
+3. Header File
+   ➥ stdio.h: Pustaka standar untuk fungsi input-output seperti printf dan scanf.
+   ➥ math.h: Digunakan untuk konstanta M_PI (nilai π ≈ 3.14159) dan operasi matematika.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	↪ pilihan: Menyimpan pilihan bentuk geometri (1–4).
+	↪ luas_permukaan: Menyimpan hasil perhitungan luas permukaan.
+   ➥ 2. Menampilkan Menu Pilihan
+	↪ Menampilkan daftar bentuk geometri dan meminta pengguna memasukkan pilihan.
+   ➥ 3. Operasi Berdasarkan Pilihan
+	↪ Case 1: Bola
+	     ➺ Rumus luas permukaan bola: A=4πr^2
+ 	     ➺ Input: Jari-jari bola.
+	     ➺ Hasil dihitung dan ditampilkan.
+	↪ Case 2: Kubus
+	     ➺ Rumus luas permukaan kubus: A=6s^2
+	     ➺ Input: Panjang sisi kubus.
+ 	     ➺ Hasil dihitung dan ditampilkan.
+	↪ Case 3: Balok
+	     ➺ Rumus luas permukaan balok: A=2(pl+pt+lt)
+	     ➺ Input: Panjang, lebar, tinggi balok.
+	     ➺ Hasil dihitung dan ditampilkan.
+	↪ Case 4: Tabung
+	     ➺ Rumus luas permukaan tabung: A=2πr(r+t)
+	     ➺ Input: Jari-jari dan tinggi tabung.
+	     ➺ Hasil dihitung dan ditampilkan.
+	↪ Default: Pilihan Tidak Valid
+	     ➺ Jika pilihan tidak valid, program menampilkan pesan error.
+   ➥ 4. Keluar dari Program
+        ↪ return 0; = Menandakan bahwa program selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ Menentukan bentuk geometri berdasarkan pilihan.
+   ➥ Meminta parameter geometri yang sesuai (misalnya, jari-jari untuk bola, sisi untuk kubus).
+   ➥ Menggunakan rumus untuk menghitung luas permukaan.
+   ➥ Menampilkan hasil perhitungan.
+
+6. Keunggulan Program:
+   ➥ Interaktif: Meminta input pengguna untuk memilih bentuk dan parameter.
+   ➥ Fleksibel: Mendukung berbagai bentuk geometri.
+   ➥ Akurat: Menggunakan konstanta M_PI untuk hasil yang presisi.

@@ -1,0 +1,47 @@
+1. Judul Program
+   ➥ Program Penghitungan Diskon dan Cashback
+
+2. Fungsi Program
+   ➥ Program ini digunakan untuk:
+	↪ Menghitung diskon berdasarkan total belanja.
+	↪ Menambahkan cashback tetap jika belanja lebih dari Rp 125.000.
+	↪ Menampilkan total belanja sebelum diskon, diskon yang diperoleh, dan total yang harus dibayar.
+
+3. Header File
+   ➥ stdio.h: Digunakan untuk fungsi input-output seperti printf dan scanf.
+
+4. Fungsi main
+   ➥ 1. Deklarasi Variabel
+	 ↪ total_belanja: Variabel bertipe float untuk menyimpan nilai total belanja.
+	 ↪ diskon: Variabel bertipe float untuk menyimpan besar diskon.
+	 ↪ total_akhir: Variabel bertipe float untuk menyimpan total belanja setelah diskon.
+	 ↪ cashback: Konstanta integer untuk menyimpan nilai cashback (Rp 5000).
+   ➥  2. Input Total Belanja
+	 ↪ printf: Menampilkan pesan untuk meminta pengguna memasukkan total belanja.
+	 ↪ scanf: Membaca input total belanja dari pengguna dan menyimpannya di variabel total_belanja.
+   ➥ 3. Menghitung Diskon
+	 ↪ Jika total belanja ≤ 75.000 = Diskon sebesar 5% dari total belanja.
+	 ↪ Jika total belanja > 75.000 dan ≤ 125.000 = Diskon sebesar 15% dari total belanja.
+  	 ↪ Jika total belanja > 125.000 = Diskon sebesar 25% dari total belanja ditambah cashback sebesar Rp 5000.
+   ➥ 4. Menghitung Total Akhir
+	 ↪ Total belanja setelah diskon dihitung dengan mengurangi diskon dari total_belanja.
+   ➥ 5. Menampilkan Hasil
+	 ↪ printf menampilkan hasil:
+	     ➺ Total belanja sebelum diskon.
+	     ➺ Besar diskon.
+	     ➺ Total yang harus dibayar setelah diskon.
+  ➥ 6. Keluar dari Program
+	↪ return 0; = Menandakan bahwa program telah selesai berjalan tanpa kesalahan.
+
+5. Logika Utama:
+   ➥ Diskon Berdasarkan Total Belanja:
+	↪ 5% untuk belanja ≤ 75.000.
+	↪ 15% untuk belanja > 75.000 dan ≤ 125.000.
+	↪ 25% + cashback Rp 5000 untuk belanja > 125.000.
+   ➥ Perhitungan Total Akhir:
+Mengurangi total belanja dengan nilai diskon.
+
+6. Keunggulan Program:
+   ➥ Fleksibel: Menggunakan kondisi untuk menghitung diskon berdasarkan nilai total belanja.
+   ➥ Sederhana: Input dan output dirancang dengan jelas.
+   ➥ Akurat: Menggunakan tipe data float untuk mendukung nilai desimal
