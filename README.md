@@ -604,3 +604,9 @@ int main() {
     ```
 - Menulis banyak baris:
   - Panggil `fputs()` berulang kali, atau gunakan perulangan.
+
+<p align="center">
+  <img src="https://i.pinimg.com/originals/d3/59/b0/d359b08ddddfa513175ade1e0ea924a4.gif" alt="Thank You GIF">
+</p>
+
+
