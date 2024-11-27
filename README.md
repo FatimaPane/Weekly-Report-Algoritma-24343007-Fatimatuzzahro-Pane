@@ -10,6 +10,10 @@ dengan Pak Randi Proska Sandra S.Pd, M.Sc
 
 ## Penjelasan Singkat Semua Modul
 
+<p align="center">
+  <img src="https://media.giphy.com/media/Y3dZXiOTzZYheWSacV/giphy.gif" alt="Animated GIF">
+</p>
+
 ### Modul 1 - Algoritma dan Pemrograman IDE
 
 #### **1. Tujuan Pembelajaran**
@@ -45,6 +49,11 @@ dengan Pak Randi Proska Sandra S.Pd, M.Sc
 #### **5. Persiapan Pemrograman**
 - Memerlukan teks editor dan compiler.
 - Compiler yang digunakan: GCC (GNU Compiler Collection).
+
+<p align="center">
+  <img src="https://mbaknoor.home.blog/wp-content/uploads/2020/05/9ac89-4c9192c2f1a1c17c9aae6d42b68342732b252812529.gif" alt="GIF 1" width="300">
+  <img src="https://modemom.wordpress.com/wp-content/uploads/2017/06/gambar-animasi-bergerak-5.gif?w=300" alt="GIF 2" width="300">
+</p>
 
 
 
@@ -121,6 +130,9 @@ dengan Pak Randi Proska Sandra S.Pd, M.Sc
    - Kata kunci bawaan bahasa C yang memiliki fungsi khusus, seperti `int`, `return`, `void`, dll.
    - Tidak dapat digunakan sebagai nama variabel.
 
+<p align="center">
+  <img src="https://i.pinimg.com/originals/c7/fb/7f/c7fb7fc37db22da56efd5eb369fe1e2b.gif" alt="Animated GIF" width="300">
+</p>
 
 
 ### Modul 4 - Operator
@@ -234,6 +246,9 @@ Mahasiswa diharapkan mampu menjelaskan dan mengimplementasikan pengambilan keput
    - Penggunaan blok **if** di dalam blok **if** lainnya.
    - Digunakan untuk keputusan kompleks dengan banyak kondisi.
 
+<p align="center">
+  <img src="https://rumahproduksiindonesia.com/wp-content/uploads/2024/07/ed0982111a6e04d288da2c3247d17053.gif" alt="Animated GIF" width="200">
+</p>
 
 
 ### Modul 6 - _Flow Control: Looping_
@@ -343,7 +358,10 @@ void main() {
   - `strlen()`: Menghitung panjang string.
   - `strcmp()`: Membandingkan dua string.
 
-
+<p align="center">
+  <img src="https://i.pinimg.com/originals/77/82/6a/77826aad9b08df884ee6e293a3e44318.gif" alt="Bunga Kiri" width="200" style="margin-right: 10px;">
+  <img src="https://i.pinimg.com/originals/77/82/6a/77826aad9b08df884ee6e293a3e44318.gif" alt="Bunga Kanan" width="200" style="margin-left: 10px;">
+</p>
 
 ### Modul 8 - Fungsi dan Prosedur
 
@@ -446,7 +464,6 @@ int main() {
 ```
 
 
-
 ### Modul 9 - _Pointer_
 
 **Rangkuman Job Sheet 9 - Pointer**
@@ -523,6 +540,9 @@ int main() {
 }
 ```
 
+<p align="center">
+  <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi9PoiWP_W7KznQFL9UbMqzxok3JJ6udt967J1rFw_ppLJtPwwBuOEATSteRNZdrOgK0IONS9T9IOfHNtPDE9XebEEfWKXAuhkcKagZ8T-qpLVr1W38W1uNeSoZJbyeQ_dcgVF4o0XAAlJmZgDpUgodjRZrYsP6ygj6hXMAc3_6IMK__8TNNkHuwGlA7A=w320-h320-rw" alt="Gambar" width="300">
+</p>
 
 
 ### Modul 10 - Enumerasi dan Struktur
@@ -606,7 +626,5 @@ int main() {
   - Panggil `fputs()` berulang kali, atau gunakan perulangan.
 
 <p align="center">
-  <img src="https://i.pinimg.com/originals/d3/59/b0/d359b08ddddfa513175ade1e0ea924a4.gif" alt="Thank You GIF">
+  <img src="https://media.tenor.com/5QOcWOXmrEkAAAAj/terima-kasih.gif" alt="Thank You GIF" width="400"> 
 </p>
-
-
