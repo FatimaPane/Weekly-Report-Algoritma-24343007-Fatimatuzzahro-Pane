@@ -1,0 +1,15 @@
+Nama: Fatima
+NIM: 24343007
+Jurusan: Informatika
+Program Studi: Teknik Informatika
+
+Nama: Auditya 
+NIM: 24343001
+Jurusan: Informatika
+Program Studi: Teknik Informatika
+
+Nama: Fajira
+NIM: 24343033
+Jurusan: Informatika
+Program Studi: Teknik Informatika
+
